@@ -1,0 +1,103 @@
+version: 2.1
+
+build-template: &build-template
+  docker:
+    - image: ankrnetwork/bounceimg:v0.0.6
+  steps:
+    - checkout
+    - setup_remote_docker
+    - run:
+        name: Output env info
+        command: node --version && yarn --version
+    - run:
+        name: Pull dependencies
+        command: yarn
+    - run:
+        no_output_timeout: 10m
+        name: Building ...
+        command: |
+          yarn export
+    - persist_to_workspace:
+        root: '.'
+        paths:
+          - '.'
+
+upload-template: &upload-template
+  docker:
+    - image: bigbadalien/awscli-node-kops-kubectl:0.3
+  steps:
+    - setup_remote_docker
+    - attach_workspace:
+        at: '.'
+    - run:
+        name: Upload artifacts
+        command: aws s3 cp ./out s3://$DOMAIN_MARKET/ --acl bucket-owner-full-control --recursive --cache-control "public,max-age=600,s-maxage=3600"
+    - run:
+        name: Cloudfront invalidation
+        command: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_MARKET --paths '/*'
+
+jobs:
+  # build
+  build-bs-1-stage:
+    <<: *build-template
+  build-bs-2-stage:
+    <<: *build-template
+  build-loading-page:
+    <<: *build-template
+  # upload
+  upload-bs-1-stage:
+    <<: *upload-template
+  upload-bs-2-stage:
+    <<: *upload-template
+  upload-loading-page:
+    <<: *upload-template
+
+workflows:
+  version: 2.1
+  bounce_market:
+    jobs:
+      - approve-loading-page:
+          type: approval
+          filters:
+            branches:
+              only: [ master ]
+      - build-loading-page:
+          context:
+            - bounce_loading_page_master
+          requires:
+            - approve-loading-page
+      - upload-loading-page:
+          context:
+            - cicd
+            - bounce_loading_page_master
+          requires:
+            - build-loading-page
+
+      # bs-1-stage.fangible.com
+      - approve-bs-1-stage:
+          type: approval
+      - build-bs-1-stage:
+          context:
+            - fangible_build_stage
+          requires:
+            - approve-bs-1-stage
+      - upload-bs-1-stage:
+          context:
+            - cicd
+            - fangible_deploy_bs_1_stage
+          requires:
+            - build-bs-1-stage
+      # bs-2-stage.fangible.com
+      - approve-bs-2-stage:
+          type: approval
+      - build-bs-2-stage:
+          context:
+            - fangible_build_stage
+          requires:
+            - approve-bs-2-stage
+      - upload-bs-2-stage:
+          context:
+            - cicd
+            - fangible_deploy_bs_2_stage
+          requires:
+            - build-bs-2-stage

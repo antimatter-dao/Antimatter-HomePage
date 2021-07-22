@@ -1,0 +1,123 @@
+{
+  "common": {
+    "site-title": "Bounce",
+    "meta": {
+      "keywords": "bounce, bounce finance, finance, DeFi, bot",
+      "description": "通过提供具有竞争力的Swap环境，Bounce致力于释放开放式金融潜力"
+    },
+    "og": {
+      "title": "Bounce",
+      "description": "通过提供具有竞争力的Swap环境，Bounce致力于释放开放式金融潜力"
+    },
+    "no-js": "JavaScript is required!",
+    "launch-app": "启动应用",
+    "learn-more": "了解更多",
+    "coming-soon": "敬请期待"
+  },
+  "header": {
+    "docs": "文档",
+    "governance": "治理",
+    "forum": "论坛",
+    "products-menu": {
+      "title": "产品",
+      "bounce-decentralized": "Bounce去中心化",
+      "fangible": "Fangible",
+      "bounce-polkadot": "Bounce Polkadot",
+      "parachain": "Bounce平行链/众贷",
+      "opensource": "Bounce开源",
+      "certified": "Bounce认证"
+    }
+  },
+  "top-block": {
+    "title": "发挥去中心化拍卖<br />潜力",
+    "text": "Bounce赋能产品拍卖生态，通过多链运作来铸造、设计、连接、收集和交易各式各样的资产、Token和NFT。"
+  },
+  "chains-block": {
+    "tiles": {
+      "bounce-auction": "Bounce拍卖",
+      "fangible": "Fangible",
+      "polka": "Bounce波卡",
+      "toolbox": "Bounce工具箱"
+    },
+    "chains": {
+      "title": "多链探索<br />chains",
+      "text": "Bounce产品已多链部署，探索更多样玩法、更多可能性以及更大潜力。"
+    },
+    "participation": {
+      "title": {
+        "part-one": "深入",
+        "part-two": "参与"
+      },
+      "text": "一个不断发展的产品生态平台，让任何人都能参与去中心化拍卖。",
+      "item1": "搭建专属拍卖平台",
+      "item2": "通过众贷运作项目或使用稀有数字资产进行交易",
+      "item3": "加入创作者经济",
+      "hint": "全部一一呈现"
+    }
+  },
+  "bounce-auction": {
+    "brand": "Bounce拍卖",
+    "title": "释放开放式金融潜力",
+    "text": "Bounce拍卖平台兑换便捷、去中心化、免信任，为数字资产交易者提供具有竞争力的swap环境。",
+    "item1": "请选择拍卖类型：固价交易、密封投标、荷兰拍、英式拍",
+    "item2": "公开或私下OTC交易.",
+    "item3": "从自动执行、依存性和免授权中受益",
+    "item4": "通过链上治理进行运作"
+  },
+  "fangible": {
+    "brand": "Fangible",
+    "title": "NFT交易市场。 著名明星、稀有艺术作品，直接面向粉丝。",
+    "text": "Fangible旨在提供全新的粉丝体验，简化加入创作者经济的流程。同时连接起艺术家和粉丝，让每个人都能参与NFT交易。",
+    "celebrities": {
+      "title": "Bounce签约明星:",
+      "eimi-fukada": {
+        "name": "深田咏美",
+        "text": "深田咏美2017年进入日本成人视频行业，并在2020年位列女优收入排行榜第三名。"
+      },
+      "凯尔·库兹马": {
+        "name": "凯尔·库兹马",
+        "text": "凯尔·库兹马为美国职业篮球运动员，效力于NBA洛杉矶湖人队。"
+      },
+      "尼克·杨": {
+        "name": "尼克·杨",
+        "text": "尼克·杨（绰号：Swaggy P）来自加利福尼亚州洛杉矶，是前美国职业篮球运动员。"
+      },
+      "skyy-clark": {
+        "name": "Skyy Clark",
+        "text": "Skyy Clark来自加利福尼亚州洛杉矶，是一名五星高中篮球运动员。"
+      },
+      "asap-rocky": {
+        "name": "A$AP Rocky",
+        "text": "A$AP Rocky来自美国纽约，既是一名饶舌歌手、歌曲作家，也是一名演员。"
+      },
+      "deandre-hopkins": {
+        "name": "德安德烈·霍普金斯,",
+        "text": "德安德烈·霍普金斯是美国橄榄球联盟亚利桑那红雀队的橄榄球外接手。"
+      },
+      "devon-dotson": {
+        "name": "德文·多特森",
+        "text": "德文·多特森，现年21岁，是一名效力于芝加哥公牛队的美国职业篮球运动员。"
+      }
+    }
+  },
+  "bounce-polkadot": {
+    "brand": "Bounce波卡",
+    "title": "波卡生态中领先的去中心化众贷应用",
+    "text": "打开波卡链广大的可能性，为DOT借贷认捐平行链债券，让用户能从双重被动收入中受益，并同时获得众贷奖励和押金奖励。领取平行链债券，解锁流动性选项。以前所未有的方式参与插槽拍卖众贷活动。"
+  },
+  "bounce-toolbox": {
+    "brand": "Bounce工具箱",
+    "title": "包含所有搭建专属去中心化拍卖平台所需的技术支持Everything you need to build to buld your own decentralized auction platform.",
+    "text": "丰富的开发者工具，轻松掌握去中心化拍卖的优势。UI设计工具箱、Bounce NFTs接入API、开源智能合约，囊括将Defi呈现给广大交易者的所需工具。"
+  },
+  "backed-by": {
+    "title": "合作伙伴"
+  },
+  "footer": {
+    "copyrights": "©{year} Bounce dao Ltd. All rights reserved."
+  },
+  "language": {
+    "en-US": "English",
+    "zh-CN": "中文"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "common": {
+    "site-title": "Bounce",
+
+    "meta": {
+      "keywords": "bounce, bounce finance, finance, DeFi, bot",
+      "description": "Bounce powers an ecosystem of products for auctions. Build, design, connect, collect and trade all kinds of assets, tokens and NFTs across multiple blockchains."
+    },
+    "og": {
+      "title": "Bounce",
+      "description": "Bounce powers an ecosystem of products for auctions. Build, design, connect, collect and trade all kinds of assets, tokens and NFTs across multiple blockchains."
+    },
+    "no-js": "JavaScript is required!",
+    "launch-app": "Launch app",
+    "learn-more": "Learn more",
+    "coming-soon": "Coming soon"
+  },
+  "header": {
+    "docs": "Docs",
+    "governance": "Governance",
+    "forum": "Forum",
+    "products-menu": {
+      "title": "Products",
+      "bounce-decentralized": "Bounce Decentralized",
+      "fangible": "Fangible",
+      "bounce-polkadot": "Bounce Polkadot",
+      "parachain": "Bounce Parachain/Crowdloan",
+      "opensource": "Bounce Open-Source",
+      "certified": "Bounce Certified"
+    }
+  },
+  "top-block": {
+    "title": "Unleash the power of decentralized auctions",
+    "text": "Bounce powers an ecosystem of products for auctions. Build, design, connect, collect and trade all kinds of assets, tokens and NFTs across multiple blockchains."
+  },
+  "chains-block": {
+    "tiles": {
+      "bounce-auction": "Bounce Auction",
+      "fangible": "Fangible",
+      "polka": "Bounce Polkadot",
+      "toolbox": "Bounce Toolbox"
+    },
+    "chains": {
+      "title": "Play across<br />chains",
+      "text": "Bounce products are available across multiple blockchains for more play, more possibility, more potential."
+    },
+    "participation": {
+      "title": {
+        "part-one": "Full scale",
+        "part-two": "participation"
+      },
+      "text": "An evolving ecosystem of products that allows all kinds of people to participate in decentralized auctions.",
+      "item1": "Build your own auction platform",
+      "item2": "Run projects through crowdloans or trade in scarce digital assets",
+      "item3": "Have a share in the creator economy",
+      "hint": "It’s all on the table."
+    }
+  },
+  "bounce-auction": {
+    "brand": "Bounce Auction",
+    "title": "Unlock the potential of open finance",
+    "text": "Trade scarce digital assets in a competitive swap environment on our versa-tile, decentralized and trustless auction platform.",
+    "item1": "Choose from an array of auction types, including: Fixed swap, Sealed-bid, Dutch and English auction.",
+    "item2": "Trade OTC publicly or privately.",
+    "item3": "Benefit from automatic execution, contingency, permission-less.",
+    "item4": "Run with on-chain governance."
+  },
+  "fangible": {
+    "brand": "Fangible",
+    "title": "NFT Marketplace. The biggest stars. Their rarest work. Directly accessible to fans.",
+    "text": "A new kind of fan experience, Fangible makes it easy to step in and own a share of the creator economy. It connects artists to their fans and lets anyone join the NFT conversation.",
+    "celebrities": {
+      "title": "Celebrities with Bounce:",
+      "eimi-fukada": {
+        "name": "Eimi Fukada",
+        "text": "Eimi Fukada is a Japanese Adult Video actress since 2017. In 2020, she was the third ranked AV actress by sales."
+      },
+      "kyle-kuzma": {
+        "name": "Kyle Kuzma",
+        "text": "Kyle Kuzma is an American professional basketball player for the Los Angeles Lakers of the NBA."
+      },
+      "nick-young": {
+        "name": "Nick Young",
+        "text": "Nick \"Swaggy P\" Young is a former professional basketball player of the NBA from Los Angeles, California."
+      },
+      "skyy-clark": {
+        "name": "Skyy Clark",
+        "text": "Skyy Clark is a 5-star High School basketball player from Los Angeles, CA."
+      },
+      "asap-rocky": {
+        "name": "A$AP Rocky",
+        "text": "A$AP Rocky is a rapper, singer, songwriter, and actor from New York City."
+      },
+      "deandre-hopkins": {
+        "name": "DeAndre Hopkins",
+        "text": "DeAndre \"Nuk\" Hopkins is an American football wide receiver for the Arizona Cardinals of the NFL."
+      },
+      "devon-dotson": {
+        "name": "Devon Dotson",
+        "text": "Devon Dotson is a 21 year old professional basketball player for the Chicago Bulls of the NBA."
+      }
+    }
+  },
+  "bounce-polkadot": {
+    "brand": "Bounce Polkadot",
+    "title": "Advanced decentralized crowdloans for the Polkadot ecosystem",
+    "text": "Open up a world of new possibilities on Polkadot. Pledge parachain bonds for DOT lending and let users benefit from a double stream of passive income. Receive crowdloan rewards and staking rewards at the same time. Claim Parachain bonds to unlock liquidity options. Work with slot auction crowdloan campaigns in previously impossible ways."
+  },
+  "bounce-toolbox": {
+    "brand": "Bounce Toolbox",
+    "title": "Everything you need to build to build your own decentralized auction platform.",
+    "text": "An extensive set of developer tools that make harnessing the power of  decentralized auctions easier than it’s ever been. UI kits, API access to Bounce NFTs, open source smart contracts. Everything you need to bring DeFi to the masses."
+  },
+  "backed-by": {
+    "title": "Backed by"
+  },
+  "footer": {
+    "copyrights": "©{year} Bounce dao Ltd. All rights reserved."
+  },
+  "language": {
+    "en-US": "English",
+    "zh-CN": "中文"
+  }
+}
