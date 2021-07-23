@@ -35,8 +35,7 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
       {
         label: (
           <>
-            <MediumIcon />
-            Medium
+            antimatter
           </>
         ),
         href: 'https://medium.com/@antimatterdefi',
@@ -44,8 +43,7 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
       {
         label: (
           <>
-            <TwitterIcon />
-            Twitter
+            nft
           </>
         ),
         href: 'https://twitter.com/antimatterdefi',
