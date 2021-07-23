@@ -26,11 +26,11 @@ export const Header = () => {
     () => [
       {
         label: t('header.docs'),
-        href: 'https://docs/',
+        href: 'https://docs.antimatter.finance/'
       },
       {
         label: t('header.governance'),
-        href: 'https://www/', // TODO: need URL
+        href: 'https://governance.antimatter.finance/'
       },
     ],
     [],

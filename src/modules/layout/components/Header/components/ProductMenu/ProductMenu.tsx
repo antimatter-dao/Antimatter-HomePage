@@ -35,18 +35,18 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
       {
         label: (
           <>
-            antimatter
+            Perpetual Option Testnet
           </>
         ),
-        href: 'https://medium.com/@antimatterdefi',
+        href: 'https://app.antimatter.finance/#/option_trading',
       },
       {
         label: (
           <>
-            nft
+            Non-fungible finance (Coming Soon)
           </>
         ),
-        href: 'https://twitter.com/antimatterdefi',
+        href: '',
       },
     ],
     [],

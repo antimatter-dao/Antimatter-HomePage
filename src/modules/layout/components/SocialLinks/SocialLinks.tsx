@@ -19,22 +19,22 @@ export const SocialLinks = ({ className }: ISocialLinks) => {
       {
         title: 'Github',
         icon: GithubIcon,
-        href: 'https://medium.com/@bouncefinance',
+        href: 'https://github.com/antimatter-finance/',
       },
       {
         title: 'Medium',
         icon: MediumIcon,
-        href: 'https://medium.com/@bouncefinance',
+        href: 'https://medium.com/@antimatterdefi',
       },
       {
         title: 'Twitter',
         icon: TwitterIcon,
-        href: 'https://twitter.com/bounce_finance?s=21',
+        href: 'https://twitter.com/antimatterdefi',
       },
       {
         title: 'Telegram',
         icon: TelegramIcon,
-        href: 'https://t.me/bounce_finance',
+        href: 'https://t.me/antimatterchat',
       },
     ],
     [],
