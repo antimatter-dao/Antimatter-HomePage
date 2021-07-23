@@ -1,6 +1,11 @@
 import { makeStyles, Theme } from '@material-ui/core';
 
 export const useContactsMenuStyles = makeStyles<Theme>(theme => ({
+  mainLink: {
+    '& svg': {
+      alignSelf: 'center',
+    }
+  },
   link: {
     whiteSpace: 'nowrap',
     '& svg': {

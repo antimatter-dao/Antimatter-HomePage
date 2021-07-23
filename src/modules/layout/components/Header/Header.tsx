@@ -57,8 +57,8 @@ export const Header = () => {
             {link.label}
           </Link>
         ))}
+        <ContactsMenu linkClass={classes.link} />
       </nav>
-      <ContactsMenu linkClass={classes.link} />
     </div>
   );
 

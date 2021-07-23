@@ -80,7 +80,7 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
         aria-controls="contacts-menu"
         aria-haspopup="true"
         onClick={handleClick}
-        className={classNames(linkClass, classes.link)}
+        className={classNames(linkClass,classes.mainLink)}
       >
         Contacts
         <AngleDownIcon className={classes.icon} />
