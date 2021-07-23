@@ -3,6 +3,7 @@ import { FONTS } from '../theme/mainTheme';
 
 export const useTopBlockStyles = makeStyles<Theme>(theme => ({
   root: {
+    paddingLeft: 0,
     minHeight: '90vh',
     paddingBottom: theme.spacing(15),
     display: 'flex',
@@ -52,6 +53,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     alignItems: 'flex-start',
     [theme.breakpoints.up('lg')]: {
       paddingBottom: 200,
+      paddingLeft: 90
     },
     [theme.breakpoints.down('md')]: {
       paddingTop: 400,
@@ -69,8 +71,9 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     [theme.breakpoints.up('lg')]: {
       fontSize: 50,
       lineHeight: '66px',
+      marginTop: 128,
       marginBottom: theme.spacing(4),
-      maxWidth: 540,
+      maxWidth: 640,
     },
   },
   text: {
@@ -78,6 +81,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     [theme.breakpoints.up('lg')]: {
       maxWidth: 568,
       marginTop: 50,
+      paddingLeft: 50
     },
   },
   filler: {

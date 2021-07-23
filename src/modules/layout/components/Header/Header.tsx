@@ -24,17 +24,17 @@ export const Header = () => {
   const links = useMemo(
     () => [
       {
+        label: t('header.products-menu.title'),
+        href: 'https://docs.bounce.finance/',
+      },
+      {
         label: t('header.docs'),
         href: 'https://docs.bounce.finance/',
       },
       {
         label: t('header.governance'),
         href: 'https://www.bounce.community/', // TODO: need URL
-      },
-      {
-        label: 'Contact',
-        href: '',
-      },
+      }
     ],
     [],
   );
@@ -109,7 +109,7 @@ export const Header = () => {
                   <Divider className={classes.mobileMenuDivider} />
                   <ContactsMenu linkClass={classes.link} />
                 </Box>
-                {/* 
+                {/*
                 <Box mt="auto" className={classes.drawerBottom}>
                   <LocaleSwitcher linkClass={classes.link} />
                 </Box> */}

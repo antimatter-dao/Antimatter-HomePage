@@ -22,7 +22,6 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
     position: 'absolute',
     top: 0,
     left: 0,
-    width: '150%',
     height: '100%',
     objectFit: 'cover',
     borderRadius: 20,
