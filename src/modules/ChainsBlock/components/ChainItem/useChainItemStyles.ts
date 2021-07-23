@@ -6,7 +6,6 @@ export const useChainItemStyles = makeStyles<Theme>(theme => ({
     width: 50,
     height: 50,
     borderRadius: '50%',
-    cursor: 'pointer',
     pointerEvents: 'auto',
     // position: 'relative',
     color: PALETTE.text.light,

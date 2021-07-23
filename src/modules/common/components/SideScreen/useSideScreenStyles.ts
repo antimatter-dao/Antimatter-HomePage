@@ -20,8 +20,7 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
   screenInView: {},
   screen: {
     position: 'absolute',
-    top: 64,
-    left: 100,
+    top: 20,
     height: '80%',
     objectFit: 'cover',
     borderRadius: 20,
@@ -37,8 +36,11 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
       transform: 'translateX(0)',
     },
     [theme.breakpoints.down('md')]: {
-      width: '180%',
       transform: 'unset',
+    },
+    [theme.breakpoints.up('md')]: {
+      left: 100,
+      top: 64,
     },
   },
 }));

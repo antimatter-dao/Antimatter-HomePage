@@ -125,6 +125,7 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
           className={classNames(linkClass, classes.link)}
           href={link.href}
           role="link"
+          underline="none"
           rel="noopener noreferrer"
           target="_blank"
           key={uid(link)}

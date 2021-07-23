@@ -7,6 +7,9 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     transform: 'translateY(-172px)',
     [theme.breakpoints.up('md')]: {
       transform: 'translateY(-239px)',
+      maxWidth: '100%',
+    },
+    [theme.breakpoints.up('lg')]: {
       maxWidth: '80%',
     },
     margin: '0 auto',
@@ -80,7 +83,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     opacity: 1,
     transition: '0.5s',
     bottom: theme.spacing(3.5),
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('lg')]: {
       bottom: theme.spacing(4.5),
       opacity: 0,
     },
@@ -99,7 +102,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     height: 60,
     opacity: 0,
     bottom: theme.spacing(3.5),
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('lg')]: {
       bottom: theme.spacing(4.5),
       opacity: 1,
     },
@@ -110,11 +113,13 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     marginRight: 21,
     fontSize: 16,
     fontWeight: 500,
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('xl')]: {
       height: 60,
+      width: 240,
     },
   },
   tileMore: {
+    whiteSpace: 'nowrap',
     display: 'block',
     fontSize: 16,
     padding: 0,
@@ -122,6 +127,9 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     color: 'inherit',
     [theme.breakpoints.up('md')]: {
       height: 60,
+    },
+    '& svg': {
+      marginLeft: 10,
     },
   },
   gradientRed: {

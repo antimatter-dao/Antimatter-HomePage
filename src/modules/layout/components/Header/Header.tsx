@@ -34,7 +34,7 @@ export const Header = () => {
       {
         label: t('header.governance'),
         href: 'https://www/', // TODO: need URL
-      }
+      },
     ],
     [],
   );
@@ -96,6 +96,7 @@ export const Header = () => {
                 <Box mb={1} className={classes.mobileMenuLinks}>
                   {links.map(link => (
                     <Link
+                      underline="none"
                       className={classes.link}
                       href={link.href}
                       role="link"

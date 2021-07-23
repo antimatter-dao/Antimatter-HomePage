@@ -1,12 +1,14 @@
+import classNames from 'classnames';
 import React from 'react';
 import { WithAnimation } from '../../../WithAnimation';
 import { useSideScreenStyles } from './useSideScreenStyles';
 
 interface ISideScreenProps {
   screenPath: string;
+  classname?: string;
 }
 
-export const SideScreen = ({ top, screenPath }: ISideScreenProps & { top: string }) => {
+export const SideScreen = ({ screenPath, classname }: ISideScreenProps) => {
   const classes = useSideScreenStyles();
 
   return (
@@ -16,7 +18,11 @@ export const SideScreen = ({ top, screenPath }: ISideScreenProps & { top: string
         defaultAnimation={false}
         addClassInView={classes.screenInView}
       >
-        <img style={{top}} className={classes.screen} src={screenPath} alt="" />
+        <img
+          className={classNames(classes.screen, classname)}
+          src={screenPath}
+          alt=""
+        />
       </WithAnimation>
     </div>
   );

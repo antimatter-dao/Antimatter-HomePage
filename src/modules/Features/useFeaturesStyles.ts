@@ -46,7 +46,7 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
   },
   container: {
-    padding: '0 88px',
+    [theme.breakpoints.up('lg')]: { padding: '0 88px' },
   },
   featuresCapsule: {
     padding: '9px 20px',
@@ -61,10 +61,11 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     fontWeight: 500,
     [theme.breakpoints.up('xl')]: { margin: '50px 10% 0' },
     '& .features': {
+      whiteSpace: 'nowrap',
       fontFamily: FONTS.medium,
       fontWeight: 500,
       fontSize: 20,
-      marginTop: 30,
+      marginTop: -30,
       [theme.breakpoints.up('md')]: {
         fontWeight: 500,
         fontSize: 24,
