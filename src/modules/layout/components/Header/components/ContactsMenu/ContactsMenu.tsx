@@ -39,7 +39,7 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
             Medium
           </>
         ),
-        href: 'https://app.bounce.finance/',
+        href: 'https://medium.com/@antimatterdefi',
       },
       {
         label: (
@@ -48,7 +48,7 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
             Twitter
           </>
         ),
-        href: 'https://fangible.com/',
+        href: 'https://twitter.com/antimatterdefi',
       },
       {
         label: (
@@ -57,7 +57,7 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
             Telegram
           </>
         ),
-        href: 'https://ksm.bounce.finance/',
+        href: 'https://t.me/antimatterchat',
       },
       {
         label: (
@@ -66,7 +66,7 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
             Github
           </>
         ),
-        href: 'https://certified.bounce.finance/',
+        href: 'https://github.com/antimatter-finance/',
       },
     ],
     [],

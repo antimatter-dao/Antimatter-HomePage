@@ -25,15 +25,15 @@ export const Header = () => {
     () => [
       {
         label: t('header.products-menu.title'),
-        href: 'https://docs.bounce.finance/',
+        href: 'https://docs',
       },
       {
         label: t('header.docs'),
-        href: 'https://docs.bounce.finance/',
+        href: 'https://docs/',
       },
       {
         label: t('header.governance'),
-        href: 'https://www.bounce.community/', // TODO: need URL
+        href: 'https://www/', // TODO: need URL
       }
     ],
     [],
