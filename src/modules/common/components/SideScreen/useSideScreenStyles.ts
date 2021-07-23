@@ -20,9 +20,9 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
   screenInView: {},
   screen: {
     position: 'absolute',
-    top: 0,
-    left: 0,
-    height: '100%',
+    top: 64,
+    left: 100,
+    height: '80%',
     objectFit: 'cover',
     borderRadius: 20,
     backfaceVisibility: 'hidden',

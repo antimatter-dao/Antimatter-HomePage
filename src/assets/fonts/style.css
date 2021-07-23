@@ -32,7 +32,7 @@
   font-family: 'Monument Extended Regular';
   src: local('Monument Extended Regular'), local('Monument-Extended-Regular'),
     url('MonumentExtended-Regular.otf') format('openType');
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 

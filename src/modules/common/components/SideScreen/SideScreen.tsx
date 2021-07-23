@@ -6,7 +6,7 @@ interface ISideScreenProps {
   screenPath: string;
 }
 
-export const SideScreen = ({ screenPath }: ISideScreenProps) => {
+export const SideScreen = ({ top, screenPath }: ISideScreenProps & { top: string }) => {
   const classes = useSideScreenStyles();
 
   return (
@@ -16,7 +16,7 @@ export const SideScreen = ({ screenPath }: ISideScreenProps) => {
         defaultAnimation={false}
         addClassInView={classes.screenInView}
       >
-        <img className={classes.screen} src={screenPath} alt="" />
+        <img style={{top}} className={classes.screen} src={screenPath} alt="" />
       </WithAnimation>
     </div>
   );

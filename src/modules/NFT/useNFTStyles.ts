@@ -42,7 +42,7 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
   },
   topContainer: {
-    padding: '0 32px',
+    padding: '0 88px',
   },
   NFTCapsule: {
     padding: '9px 20px',
@@ -60,7 +60,7 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
       [theme.breakpoints.up('md')]: {
         fontWeight: 500,
         fontSize: 24,
-        marginTop: 100,
+        marginTop: 47,
       },
     },
     '& ul': { padding: 0 },

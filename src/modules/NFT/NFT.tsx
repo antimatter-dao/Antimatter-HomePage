@@ -50,7 +50,7 @@ export const NFT = () => {
                 </SideContent>
               </Grid>
               <Grid item xs={12} lg={6}>
-                <SideScreen screenPath="images/NFT/NFT_screen.jpg" />
+                <SideScreen top="120px" screenPath="images/NFT/NFT_screen.jpg" />
               </Grid>
             </Grid>
           </Container>

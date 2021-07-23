@@ -46,7 +46,7 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
   },
   container: {
-    padding: '0 32px',
+    padding: '0 88px',
   },
   featuresCapsule: {
     padding: '9px 20px',

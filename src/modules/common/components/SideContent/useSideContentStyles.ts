@@ -23,9 +23,9 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
     flexWrap: 'nowrap',
     alignItems: 'center',
     flexDirection: 'row',
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacing(2),
     [theme.breakpoints.up('lg')]: {
-      marginBottom: theme.spacing(7.5),
+      marginBottom: theme.spacing(2),
     },
   },
   brandLogo: {
@@ -47,9 +47,9 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
     transitionDelay: '0.2s',
     [theme.breakpoints.up('lg')]: {
       fontSize: 44,
-      lineHeight: '66px',
+      lineHeight: '132%',
       marginBottom: theme.spacing(4),
-      maxWidth: 540,
+      width: 580,
     },
   },
   titleSm: {
