@@ -40,13 +40,13 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
   },
 
   title: {
-    fontSize: 48,
-    fontFamily: FONTS.medium,
+    fontSize: 24,
+    fontFamily: FONTS.title,
     fontWeight: 500,
-    marginBottom: theme.spacing(5),
+    marginBottom: theme.spacing(2),
     transitionDelay: '0.2s',
     [theme.breakpoints.up('lg')]: {
-      fontSize: 58,
+      fontSize: 44,
       lineHeight: '66px',
       marginBottom: theme.spacing(4),
       maxWidth: 540,
@@ -61,7 +61,12 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
   },
   text: {
     transitionDelay: '0.4s',
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacing(2),
+    fontSize: 15,
+    [theme.breakpoints.up('lg')]: {
+      fontSize: 16,
+      marginBottom: theme.spacing(4),
+    },
   },
 
   btnWrap: {

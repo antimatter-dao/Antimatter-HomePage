@@ -54,7 +54,7 @@ export const Tiles = () => {
                 variant="text"
                 role="link"
               >
-                {t('common.learn-more')}
+                Learn More
               </Button>
             </Box>
           </div>
@@ -92,7 +92,7 @@ export const Tiles = () => {
                 variant="text"
                 role="link"
               >
-                {t('common.learn-more')}
+                Learn More
               </Button>
             </Box>
           </div>

@@ -18,6 +18,9 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
   },
 
   container: {
+    margin: 0,
+    width: '100%',
+    maxWidth: 'unset',
     display: 'grid',
     alignItems: 'center',
     gridTemplateColumns: 'auto auto',
@@ -27,7 +30,7 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
       gridTemplateColumns: '1fr 4fr',
       justifyContent: 'initial',
       paddingLeft: theme.spacing(11.25),
-      paddingRight: theme.spacing(16.25),
+      paddingRight: theme.spacing(11.25),
     },
   },
 
@@ -41,9 +44,8 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
   renderDesktop: {
     display: 'none',
     [theme.breakpoints.up('xl')]: {
-      display: 'grid',
-      alignItems: 'center',
-      gridTemplateColumns: '15% 50% 21% auto',
+      display: 'flex',
+      justifyContent: 'flex-end',
     },
   },
 
@@ -53,7 +55,7 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     display: 'flex',
     flexWrap: 'nowrap',
     flexDirection: 'row',
-    width: '100%',
+    width: 'auto',
     justifyContent: 'flex-end',
     [theme.breakpoints.up('xl')]: {
       justifyContent: 'center',

@@ -8,11 +8,12 @@ export const useChainsBlockStyles = makeStyles<Theme>(theme => ({
     background: '#232323',
     color: PALETTE.text.light,
     margin: `${-PARALLAX_MARGIN}px 0`,
-    borderRadius: 0,
+    maxWidth: '100%',
+    borderRadius: ' 0 0 60px 60px ',
     pointerEvents: 'auto',
+    minHeight: '100vh',
     '&::before': {
       content: `''`,
-      display: 'block',
       position: 'absolute',
       top: -59,
       width: '100%',
@@ -20,14 +21,16 @@ export const useChainsBlockStyles = makeStyles<Theme>(theme => ({
       height: 60,
       borderRadius: '60px 60px 0 0',
     },
-    [theme.breakpoints.up('md')]: {
-      borderRadius: '0 0 80px 80px',
-      '&::before': {
-        borderRadius: '80px 80px 0 0',
-      },
-    },
     [theme.breakpoints.up('lg')]: {
+      minHeight: 'unset',
       margin: `${-PARALLAX_MARGIN}px 32px`,
+      borderRadius: '0 0 120px 120px',
+      '&::before': {
+        display: 'block',
+        borderRadius: '120px 120px 0 0',
+        top: -119,
+        height: 120,
+      },
     },
     '& ::selection': {
       background: PALETTE.background.default,
@@ -36,5 +39,9 @@ export const useChainsBlockStyles = makeStyles<Theme>(theme => ({
   },
   container: {
     padding: 0,
+    overflow: 'hidden',
+    [theme.breakpoints.up('md')]: {
+      overflow: 'visible',
+    },
   },
 }));

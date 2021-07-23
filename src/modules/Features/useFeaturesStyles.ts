@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core';
-import { PALETTE } from '../theme/mainTheme';
+import { PALETTE, FONTS } from '../theme/mainTheme';
 import { PARALLAX_MARGIN } from '../theme/const';
 
 export const useFeaturesStyles = makeStyles<Theme>(theme => ({
@@ -46,18 +46,41 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
   },
   container: {
-    padding: 32,
+    padding: '0 32px',
+  },
+  featuresCapsule: {
+    padding: '9px 20px',
+    fontSize: 20,
+    borderRadius: 27,
+    color: '#ffffff',
+    background:
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) -48.61%, rgba(255, 255, 255, 0) 86.17%, rgba(255, 255, 255, 0.5) 219.44%), linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.4) 123.86%), #9FEA38;',
   },
   features: {
     fontSize: 24,
     fontWeight: 500,
-    marginTop: 0,
-    [theme.breakpoints.up('lg')]: { marginTop: 100 },
-    '& ul': { padding: 0 },
+    [theme.breakpoints.up('xl')]: { margin: '50px 10% 0' },
+    '& .features': {
+      fontFamily: FONTS.medium,
+      fontWeight: 500,
+      fontSize: 20,
+      marginTop: 30,
+      [theme.breakpoints.up('md')]: {
+        fontWeight: 500,
+        fontSize: 24,
+        marginTop: 100,
+      },
+    },
+    '& ul': {
+      padding: 0,
+      marginBottom: -30,
+      [theme.breakpoints.up('lg')]: { marginBottom: 0 },
+    },
     '& li': {
       listStyle: 'none',
       display: 'flex',
       alignItems: 'center',
+      marginBottom: 10,
       '&::before': {
         display: 'block',
         content: `''`,
@@ -67,11 +90,12 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
         borderRadius: '50%',
         marginRight: 20,
         flexShrink: 0,
-      },
-      [theme.breakpoints.up('md')]: {
-        height: 70,
-        fontSize: 15,
         fontWeight: 300,
+      },
+      fontSize: 15,
+      [theme.breakpoints.up('lg')]: {
+        fontSize: 16,
+        marginBottom: 30,
       },
     },
   },

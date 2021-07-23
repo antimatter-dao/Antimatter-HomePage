@@ -58,10 +58,13 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
   },
   title: {
     fontSize: 28,
-    fontFamily: FONTS.medium,
-    fontWeight: 500,
+    fontFamily: FONTS.title,
+    fontWeight: 400,
     marginBottom: theme.spacing(3),
     transitionDelay: '0.2s',
+    '& span': {
+      fontFamily: FONTS.titleBold,
+    },
     [theme.breakpoints.up('lg')]: {
       fontSize: 58,
       lineHeight: '66px',
@@ -72,13 +75,15 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
   text: {
     transitionDelay: '0.4s',
     [theme.breakpoints.up('lg')]: {
-      maxWidth: 375,
+      maxWidth: 568,
     },
   },
   filler: {
     height: 0,
+    display: 'none',
     [theme.breakpoints.up('lg')]: {
       height: 60,
+      display: 'block',
     },
   },
 }));

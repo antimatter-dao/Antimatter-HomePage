@@ -38,8 +38,9 @@ export const WithScrollFreezing = ({
     const wrap: any = wrapRef.current;
     const wrapBottom = wrap?.offsetHeight + wrap?.offsetTop;
     const scrollTop = window.scrollY + window.innerHeight;
+    const wrapBottomFallBack = wrap?.offsetHeight * 2 + wrap?.offsetTop;
     if (isChainBlock) {
-      if (wrapBottom + PARALLAX_MARGIN <= scrollTop) {
+      if (wrapBottom <= scrollTop && scrollTop < wrapBottomFallBack) {
         setFloatingWrapClass(classes.chainBlockFixed);
       } else {
         setFloatingWrapClass(classes.notFixed);
@@ -47,8 +48,6 @@ export const WithScrollFreezing = ({
     } else {
       const scrollTopForEffect =
         window.scrollY - PARALLAX_MARGIN + window.innerHeight / 2;
-
-      const wrapBottomFallBack = wrap?.offsetHeight * 2 + wrap?.offsetTop;
       if (scrollTop > wrapBottom && scrollTop < wrapBottomFallBack) {
         if (scrollTopForEffect > wrapBottom) {
           {

@@ -12,8 +12,8 @@ export const ChainsBlock = () => {
   return (
     // <WithScrollFreezing isChainBlock={true}>
     <div className={classes.root} id="chains-block">
+      <Tiles />
       <Container maxWidth={false} className={classes.container}>
-        <Tiles />
         <Chains />
         {/* <Participation /> */}
       </Container>

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Helvetica Neue';
-  src: local('Helvetica Neue Roman'), local('Helvetica-Neue-Roman'),
-  url('HelveticaNeueCyr-Roman.woff2') format('woff2'),
-  url('HelveticaNeueCyr-Roman.woff') format('woff'),
-  url('HelveticaNeueCyr-Roman.ttf') format('truetype');
+  src: local('Helvetica Neue Light'), local('Helvetica-Neue-Roman'),
+    url('HelveticaNeueCyr-Light.woff') format('woff2'),
+    url('HelveticaNeueCyr-Light.woff2') format('woff'),
+    url('HelveticaNeueCyr-Light.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -11,9 +11,9 @@
 @font-face {
   font-family: 'Helvetica Neue Medium';
   src: local('Helvetica Neue Medium'), local('Helvetica-Neue-Medium'),
-  url('HelveticaNeueCyr-Medium.woff2') format('woff2'),
-  url('HelveticaNeueCyr-Medium.woff') format('woff'),
-  url('HelveticaNeueCyr-Medium.ttf') format('truetype');
+    url('HelveticaNeueCyr-Medium.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Medium.woff') format('woff'),
+    url('HelveticaNeueCyr-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -21,9 +21,25 @@
 @font-face {
   font-family: 'Helvetica Neue Bold';
   src: local('Helvetica Neue Bold'), local('Helvetica-Neue-Bold'),
-  url('HelveticaNeueCyr-Bold.woff2') format('woff2'),
-  url('HelveticaNeueCyr-Bold.woff') format('woff'),
-  url('HelveticaNeueCyr-Bold.ttf') format('truetype');
+    url('HelveticaNeueCyr-Bold.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Bold.woff') format('woff'),
+    url('HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended Regular';
+  src: local('Monument Extended Regular'), local('Monument-Extended-Regular'),
+    url('MonumentExtended-Regular.otf') format('openType');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monument Extended Bold';
+  src: local('Monument Extended Bold'), local('Monument-Extended-Bold'),
+    url('MonumentExtended-Ultrabold.otf') format('openType');
   font-weight: 700;
   font-style: normal;
 }

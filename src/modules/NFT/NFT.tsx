@@ -30,8 +30,8 @@ export const NFT = () => {
                   btnUrl="https://fangible.com/"
                   smallTitleStyle
                 >
-                  <Box>
-                    <div>Features</div>
+                  <Box className={classes.features}>
+                    <div className="features">Features</div>
                     <ul>
                       <li>
                         Issuance of NFTs with a combination of multiple

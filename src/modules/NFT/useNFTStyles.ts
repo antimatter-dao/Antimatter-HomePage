@@ -1,5 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core';
-import { PALETTE } from '../theme/mainTheme';
+import { FONTS, PALETTE } from '../theme/mainTheme';
 import { PARALLAX_MARGIN } from '../theme/const';
 
 export const useNFTStyles = makeStyles<Theme>(theme => ({
@@ -25,14 +25,16 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
       height: 60,
       borderRadius: '60px 60px 0 0',
     },
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('lg')]: {
       paddingBottom: theme.spacing(23),
+      borderRadius: '0 0 120px 120px',
+      '&::before': {
+        borderRadius: '120px 120px 0 0 ',
+      },
+    },
+    [theme.breakpoints.up('lg')]: {
       marginLeft: 32,
       marginRight: 32,
-      borderRadius: '0 0 80px 80px',
-      '&::before': {
-        borderRadius: '80px 80px 0 0 ',
-      },
     },
   },
   wrap: {
@@ -40,7 +42,7 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
   },
   topContainer: {
-    paddingRight: 0,
+    padding: '0 32px',
   },
   NFTCapsule: {
     padding: '9px 20px',
@@ -49,5 +51,40 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     color: '#ffffff',
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.5) -48.61%, rgba(255, 255, 255, 0) 86.17%, rgba(255, 255, 255, 0.5) 219.44%), #FF8DB5;',
+  },
+  features: {
+    '& .features': {
+      fontFamily: FONTS.medium,
+      fontWeight: 500,
+      fontSize: 20,
+      [theme.breakpoints.up('md')]: {
+        fontWeight: 500,
+        fontSize: 24,
+        marginTop: 100,
+      },
+    },
+    '& ul': { padding: 0 },
+    '& li': {
+      listStyle: 'none',
+      display: 'flex',
+      alignItems: 'center',
+      '&::before': {
+        display: 'block',
+        content: `''`,
+        height: 6,
+        width: 6,
+        backgroundColor: '#FF8DB5',
+        borderRadius: '50%',
+        marginRight: 20,
+        flexShrink: 0,
+
+        fontWeight: 300,
+      },
+      fontSize: 15,
+      marginTop: 30,
+      [theme.breakpoints.up('md')]: {
+        fontSize: 16,
+      },
+    },
   },
 }));

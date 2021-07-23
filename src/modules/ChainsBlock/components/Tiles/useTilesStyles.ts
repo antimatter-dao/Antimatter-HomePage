@@ -7,12 +7,17 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     transform: 'translateY(-172px)',
     [theme.breakpoints.up('md')]: {
       transform: 'translateY(-239px)',
+      maxWidth: '80%',
     },
+    margin: '0 auto',
+    width: 'auto',
+    justifyContent: 'center',
   },
   tileItem: {
-    margin: 0,
-    padding: 0,
-    width: '100%',
+    margin: '0 20px',
+    [theme.breakpoints.up('lg')]: {
+      margin: 0,
+    },
     [theme.breakpoints.up('xl')]: {
       '&&': {
         paddingTop: 0,
@@ -21,12 +26,6 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     },
     '&:nth-child(2)': {
       transitionDelay: '0.3s',
-    },
-    '&:nth-child(3)': {
-      transitionDelay: '0.6s',
-    },
-    '&:nth-child(4)': {
-      transitionDelay: '0.9s',
     },
   },
   tileItemContent: {
@@ -41,6 +40,9 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
     textDecoration: 'none',
     cursor: 'default',
+    '&:hover': {
+      background: '#ffffff url(./images/ellipse.png) no-repeat center 80%',
+    },
     '&:hover $tileCount': {
       opacity: 0,
     },
@@ -60,6 +62,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     },
   },
   tileTop: {
+    fontFamily: FONTS.title,
     display: 'flex',
     width: '100%',
     flexWrap: 'nowrap',
@@ -84,7 +87,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
   },
   tileCount: {
     position: 'absolute',
-    fontFamily: FONTS.medium,
+    fontFamily: FONTS.primary,
     fontWeight: 500,
     fontSize: 20,
     borderRadius: '50%',
@@ -106,6 +109,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     width: 156,
     marginRight: 21,
     fontSize: 16,
+    fontWeight: 500,
     [theme.breakpoints.up('md')]: {
       height: 60,
     },

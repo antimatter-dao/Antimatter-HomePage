@@ -49,7 +49,7 @@ export const Chains = () => {
   );
 
   return (
-    <div className={classes.root}>
+    <>
       <WithAnimation
         className={classes.title}
         Component={Typography}
@@ -62,33 +62,35 @@ export const Chains = () => {
         </WithAnimation>
       </WithAnimation>
 
-      {isXLUp ? (
-        <WithAnimation
-          className={classes.itemsDesktop}
-          rootMargin="-50%"
-          defaultAnimation={false}
-          addClassInView={classes.itemsDesktopInView}
-        >
-          {items.map(item => (
-            <div className={classes.item} key={uid(item)}>
-              <ChainItem label={item.label} icon={item.icon} />
-            </div>
-          ))}
-        </WithAnimation>
-      ) : (
-        <WithAnimation
-          className={classes.itemsMobile}
-          rootMargin="-5%"
-          defaultAnimation={false}
-          addClassInView={classes.itemsMobileInView}
-        >
-          {items.map(item => (
-            <div className={classes.item} key={uid(item)}>
-              <ChainItem label={item.label} icon={item.icon} />
-            </div>
-          ))}
-        </WithAnimation>
-      )}
-    </div>
+      <div className={classes.root}>
+        {isXLUp ? (
+          <WithAnimation
+            className={classes.itemsDesktop}
+            rootMargin="10%"
+            defaultAnimation={false}
+            addClassInView={classes.itemsDesktopInView}
+          >
+            {items.map(item => (
+              <div className={classes.item} key={uid(item)}>
+                <ChainItem label={item.label} icon={item.icon} />
+              </div>
+            ))}
+          </WithAnimation>
+        ) : (
+          <WithAnimation
+            className={classes.itemsMobile}
+            rootMargin="10%"
+            defaultAnimation={false}
+            addClassInView={classes.itemsMobileInView}
+          >
+            {items.map(item => (
+              <div className={classes.item} key={uid(item)}>
+                <ChainItem label={item.label} icon={item.icon} />
+              </div>
+            ))}
+          </WithAnimation>
+        )}
+      </div>
+    </>
   );
 };

@@ -25,7 +25,7 @@ export const useWithScrollFreezingStyles = makeStyles<Theme>(() => ({
     position: 'fixed',
     left: 0,
     right: 0,
-    bottom: PARALLAX_MARGIN,
+    bottom: 233,
     zIndex: 1,
   },
   fixedWithEffect: {

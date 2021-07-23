@@ -22,7 +22,9 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
     position: 'absolute',
     top: 0,
     left: 0,
-    width: '160%',
+    width: '150%',
+    height: '100%',
+    objectFit: 'cover',
     borderRadius: 20,
     backfaceVisibility: 'hidden',
     transformOrigin: '100% 0',
@@ -35,9 +37,8 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
       opacity: 1,
       transform: 'translateX(0)',
     },
-    [theme.breakpoints.down('lg')]: {
-      width: '100%',
-      height: 'auto',
+    [theme.breakpoints.down('md')]: {
+      width: '180%',
       transform: 'unset',
     },
   },

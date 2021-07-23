@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useFeaturesStyles } from './useFeaturesStyles';
 import { Box, Container, Grid } from '@material-ui/core';
 import { SideScreen } from '../common/components/SideScreen';
@@ -14,14 +14,24 @@ export const Features = () => {
   const isLGUp = useIsLGUp();
   const isMDDown = useIsMDDown();
 
+  const FeaturesCapsule = useCallback(
+    () => (
+      <div className={classes.featuresCapsule}>
+        Antimatter Perpetual Options
+      </div>
+    ),
+    [],
+  );
+
   return (
     <WithScrollFreezing>
-      <div className={classes.root} id="bounce-auction">
+      <div className={classes.root} id="features">
         <div className={classes.wrap}>
           <Container maxWidth={false} className={classes.container}>
             <Grid container>
               <Grid item xs={12} lg={6}>
                 <SideContent
+                  BrandLogo={FeaturesCapsule}
                   title={'Unlock perpetual options for all cryptocurrencies'}
                   text={
                     'Antimatter enables traders to speculate on future prices of cryptocurrencies by utilizing on-chain financial derivatives, called perpetual options. These tokenized perpetual options can be created and traded on the Antimatter platform.'
@@ -44,10 +54,10 @@ export const Features = () => {
           </Container>
           <Box margin="32px" className={classes.features}>
             <WithAnimation>
-              <div>Features</div>
+              <div className="features">Features</div>
             </WithAnimation>
             <Grid container spacing={5}>
-              <Grid item xs={12} lg={4}>
+              <Grid item xs={12} md={4}>
                 <WithAnimation>
                   <ul>
                     <li>Non-custodial 24/7 global options tradin</li>
@@ -59,7 +69,7 @@ export const Features = () => {
                 </WithAnimation>
               </Grid>
 
-              <Grid item xs={12} lg={4}>
+              <Grid item xs={12} md={4}>
                 <WithAnimation>
                   <ul>
                     <li>No funding fees</li>
@@ -71,7 +81,7 @@ export const Features = () => {
                 </WithAnimation>
               </Grid>
 
-              <Grid item xs={12} lg={4}>
+              <Grid item xs={12} md={4}>
                 <WithAnimation>
                   <ul>
                     <li>No external oracle</li>

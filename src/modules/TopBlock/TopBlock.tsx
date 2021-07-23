@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTopBlockStyles } from './useTopBlockStyles';
 import { Container, Typography } from '@material-ui/core';
-import { t, tHTML } from '../../i18n/intl';
 import { WithAnimation } from '../WithAnimation';
 import classNames from 'classnames';
 import { ChainsBlock } from '../ChainsBlock';
@@ -39,7 +38,8 @@ export const TopBlock = () => {
             Component={Typography}
             variant="h2"
           >
-            The gateway for DeFi derivatives & financial NFT’s
+            The gateway for <span>DeFi</span> derivatives & financial{' '}
+            <span>NFT’</span>s
           </WithAnimation>
           <WithAnimation className={classes.text} Component={Typography}>
             Antimatter powers an ecosystem of on-chain financial products.

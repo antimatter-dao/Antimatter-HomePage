@@ -9,7 +9,7 @@ import Document, {
 import React from 'react';
 import flush from 'styled-jsx/server';
 import { t } from '../src/i18n/intl';
-import intl from 'react-intl-universal';
+// import intl from 'react-intl-universal';
 
 type Props = {};
 
@@ -43,10 +43,10 @@ class MyDocument extends Document<Props> {
   };
 
   render() {
-    const { currentLocale } = intl.getInitOptions();
+    // const { currentLocale } = intl.getInitOptions();
 
     return (
-      <Html lang={currentLocale} dir="ltr">
+      <Html lang={'en-US'} dir="ltr">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width,initial-scale=1" />

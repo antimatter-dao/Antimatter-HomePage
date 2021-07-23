@@ -21,22 +21,31 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
   },
   title: {
     position: 'absolute',
-    fontFamily: FONTS.medium,
+    fontFamily: FONTS.title,
     fontWeight: 500,
     fontSize: 24,
     marginLeft: 20,
+    top: 250,
+    maxWidth: 328,
     [theme.breakpoints.up('md')]: {
       fontSize: 44,
+      top: 390,
+      marginLeft: 60,
+      maxWidth: 'unset',
+    },
+    [theme.breakpoints.up('lg')]: {
+      top: 120,
     },
   },
   text: {
     marginTop: 16,
-    fontSize: 16,
+    fontSize: 15,
     maxWidth: 328,
     textAlign: 'left',
     [theme.breakpoints.up('md')]: {
       maxWidth: 480,
       marginTop: 42,
+      fontSize: 16,
     },
   },
   itemsDesktop: {
@@ -49,8 +58,8 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
     pointerEvents: 'none',
   },
   item: {
-    width: '10vw',
-    height: '10vw',
+    width: '50px',
+    height: '50px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -65,10 +74,10 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
       height: '60%',
       width: '60%',
     },
-    [theme.breakpoints.up('xl')]: {
-      width: 'auto',
-      height: 'auto',
-    },
+    // [theme.breakpoints.up('xl')]: {
+    //   width: 'auto',
+    //   height: 'auto',
+    // },
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -83,6 +92,9 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
     },
   },
   itemsDesktopInView: {
+    [theme.breakpoints.up(1440)]: {
+      transform: 'translateX(50px)',
+    },
     '& $item': {
       opacity: 1,
       '&:nth-child(1)': {
@@ -125,7 +137,7 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
   },
 
   itemsMobile: {
-    transform: 'translateY(100px)',
+    transform: 'translateY(145px) scale(90%)',
     position: 'relative',
     margin: '0 auto',
     maxWidth: 900,
@@ -151,7 +163,7 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
         width: 96,
       },
       '&:nth-child(3)': {
-        top: '10%',
+        top: '15%',
         left: '96%',
         height: 52,
         width: 52,
