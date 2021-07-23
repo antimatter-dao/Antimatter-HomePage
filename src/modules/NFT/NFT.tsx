@@ -41,6 +41,10 @@ export const NFT = () => {
                         Financial ETFs and formation of customized indexes
                         through NFTs
                       </li>
+                      <li>
+                        Select asset to put into a locker NFT and you can choose
+                        a release schedule for the token
+                      </li>
                     </ul>
                   </Box>
                 </SideContent>

@@ -30,8 +30,8 @@ export const PolygonIcon = (props: SvgIconProps) => {
           y2="44.2792"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00FFA3" />
-          <stop offset="1" stop-color="#DC1FFF" />
+          <stop stopColor="#00FFA3" />
+          <stop offset="1" stopColor="#DC1FFF" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -41,8 +41,8 @@ export const PolygonIcon = (props: SvgIconProps) => {
           y2="44.2793"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00FFA3" />
-          <stop offset="1" stop-color="#DC1FFF" />
+          <stop stopColor="#00FFA3" />
+          <stop offset="1" stopColor="#DC1FFF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -52,8 +52,8 @@ export const PolygonIcon = (props: SvgIconProps) => {
           y2="44.2794"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00FFA3" />
-          <stop offset="1" stop-color="#DC1FFF" />
+          <stop stopColor="#00FFA3" />
+          <stop offset="1" stopColor="#DC1FFF" />
         </linearGradient>
       </defs>
     </svg>

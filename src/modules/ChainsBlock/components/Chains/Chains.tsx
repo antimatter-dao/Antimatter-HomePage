@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 import { useChainsStyles } from './useChainsStyles';
 import { WithAnimation } from '../../../WithAnimation';
-import { t, tHTML } from '../../../../i18n/intl';
 import { Typography } from '@material-ui/core';
 import { useIsXLUp } from '../../../theme';
 import { EthereumIcon } from '../../../common/components/Icons/EthereumIcon';
@@ -79,7 +78,7 @@ export const Chains = () => {
         ) : (
           <WithAnimation
             className={classes.itemsMobile}
-            rootMargin="10%"
+            rootMargin="0%"
             defaultAnimation={false}
             addClassInView={classes.itemsMobileInView}
           >

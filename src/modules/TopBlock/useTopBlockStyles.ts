@@ -23,12 +23,12 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     width: '100%',
     minWidth: '100vw',
     objectFit: 'cover',
-    transform: 'translate(-50%, -70%)',
+    transform: 'translate(-50%, -80%)',
     [theme.breakpoints.up('lg')]: {
-      width: '75%',
+      width: '65%',
       height: 'auto',
       minWidth: 'unset',
-      transform: 'translate(13%, -50%)',
+      transform: 'translate(13%, -55%)',
       left: 'unset',
       right: 0,
     },
@@ -76,6 +76,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     transitionDelay: '0.4s',
     [theme.breakpoints.up('lg')]: {
       maxWidth: 568,
+      marginTop: 50,
     },
   },
   filler: {
