@@ -85,7 +85,6 @@ export const Features = () => {
                 <WithAnimation>
                   <ul>
                     <li>No external oracle</li>
-                    <li>No liquidation risk among all Call / Put options</li>
                     <li>
                       Exercise at any moment during the period of holding a
                       contract
