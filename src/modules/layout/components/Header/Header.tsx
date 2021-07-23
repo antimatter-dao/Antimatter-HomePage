@@ -15,6 +15,7 @@ import { useHeader } from './useHeader';
 import { ContactsMenu } from './components/ContactsMenu';
 import React, { useMemo } from 'react';
 import { uid } from 'react-uid';
+import { ProductMenu } from './components/ProductMenu';
 
 export const Header = () => {
   const { mobileNavShowed, toggleNav } = useHeader();
@@ -23,10 +24,6 @@ export const Header = () => {
 
   const links = useMemo(
     () => [
-      {
-        label: t('header.products-menu.title'),
-        href: 'https://docs',
-      },
       {
         label: t('header.docs'),
         href: 'https://docs/',
@@ -44,6 +41,7 @@ export const Header = () => {
       {/* <LocaleSwitcher linkClass={classes.link} /> */}
 
       <nav className={classes.links}>
+        <ProductMenu linkClass={classes.link} />
         {links.map(link => (
           <Link
             underline="none"
@@ -94,6 +92,8 @@ export const Header = () => {
                   />
                 </Box>
                 <Box mb={1} className={classes.mobileMenuLinks}>
+                  <ProductMenu linkClass={classes.link} />
+                  <Divider className={classes.mobileMenuDivider} />
                   {links.map(link => (
                     <Link
                       underline="none"
