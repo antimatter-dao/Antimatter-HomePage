@@ -12,7 +12,7 @@ import { Toggle } from '../Toggle';
 import { useHeaderStyles } from './useHeaderStyles';
 import { useHeader } from './useHeader';
 // import { LocaleSwitcher } from '../LocaleSwitcher';
-import { ProductsMenu } from './components/ProductsMenu';
+import { ContactsMenu } from './components/ContactsMenu';
 import React, { useMemo } from 'react';
 import { uid } from 'react-uid';
 
@@ -44,9 +44,9 @@ export const Header = () => {
       {/* <LocaleSwitcher linkClass={classes.link} /> */}
 
       <nav className={classes.links}>
-        <ProductsMenu linkClass={classes.link} />
         {links.map(link => (
           <Link
+            underline="none"
             className={classes.link}
             href={link.href}
             role="link"
@@ -58,6 +58,7 @@ export const Header = () => {
           </Link>
         ))}
       </nav>
+      <ContactsMenu linkClass={classes.link} />
     </div>
   );
 
@@ -93,8 +94,6 @@ export const Header = () => {
                   />
                 </Box>
                 <Box mb={1} className={classes.mobileMenuLinks}>
-                  <ProductsMenu linkClass={classes.link} />
-                  <Divider className={classes.mobileMenuDivider} />
                   {links.map(link => (
                     <Link
                       className={classes.link}
@@ -107,6 +106,8 @@ export const Header = () => {
                       {link.label}
                     </Link>
                   ))}
+                  <Divider className={classes.mobileMenuDivider} />
+                  <ContactsMenu linkClass={classes.link} />
                 </Box>
                 {/* 
                 <Box mt="auto" className={classes.drawerBottom}>

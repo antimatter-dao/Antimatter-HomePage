@@ -11,6 +11,7 @@ import { PolygonIcon } from '../../../common/components/Icons/PolygonIcon';
 import { SolanaIcon } from '../../../common/components/Icons/SolanaIcon';
 import { ChainItem } from '../ChainItem';
 import { uid } from 'react-uid';
+import { Icon } from '../../../common/components/Icons/Icon';
 
 export const Chains = () => {
   const classes = useChainsStyles();
@@ -32,8 +33,8 @@ export const Chains = () => {
         icon: <HuobiIcon />,
       },
       {
-        label: 'Kusama',
-        icon: <KusamaIcon />,
+        label: 'Icon',
+        icon: <Icon />,
       },
       {
         label: 'Polygon',

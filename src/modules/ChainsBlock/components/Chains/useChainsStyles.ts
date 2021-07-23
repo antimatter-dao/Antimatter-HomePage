@@ -10,7 +10,7 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
     // borderBottom: `1px solid ${fade(theme.palette.common.white, 0.5)}`,
     [theme.breakpoints.up('xl')]: {
       borderBottom: 'none',
-      minHeight: 300,
+      minHeight: 200,
       display: 'grid',
       gridTemplateRows: '1fr auto',
     },

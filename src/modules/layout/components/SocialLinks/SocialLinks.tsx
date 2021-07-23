@@ -2,10 +2,10 @@ import React, { useMemo } from 'react';
 import { MediumIcon } from '../../../common/components/Icons/MediumIcon';
 import { TwitterIcon } from '../../../common/components/Icons/TwitterIcon';
 import { TelegramIcon } from '../../../common/components/Icons/TelegramIcon';
+import { GithubIcon } from '../../../common/components/Icons/GithubIcon';
 import { Box, IconButton } from '@material-ui/core';
 import { uid } from 'react-uid';
 import { useSocialLinksStyles } from './useSocialLinksStyles';
-import { GithubIcon } from '../../../common/components/Icons/GithubIcon';
 
 interface ISocialLinks {
   className?: any;

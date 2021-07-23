@@ -2,12 +2,12 @@
   "common": {
     "site-title": "Antimatter",
     "meta": {
-      "keywords": "bounce, bounce finance, finance, DeFi, bot",
-      "description": "Bounce powers an ecosystem of products for auctions. Build, design, connect, collect and trade all kinds of assets, tokens and NFTs across multiple blockchains."
+      "keywords": "antimatter, bounce finance, finance, DeFi, bot",
+      "description": "Antimatter powers an ecosystem of products for auctions. Build, design, connect, collect and trade all kinds of assets, tokens and NFTs across multiple blockchains."
     },
     "og": {
       "title": "Antimatter",
-      "description": "Bounce powers an ecosystem of products for auctions. Build, design, connect, collect and trade all kinds of assets, tokens and NFTs across multiple blockchains."
+      "description": "Antimatter powers an ecosystem of products for auctions. Build, design, connect, collect and trade all kinds of assets, tokens and NFTs across multiple blockchains."
     },
     "no-js": "JavaScript is required!",
     "launch-app": "Launch app",
@@ -64,7 +64,7 @@
     "title": "Backed by"
   },
   "footer": {
-    "copyrights": "©{year} Bounce dao Ltd. All rights reserved."
+    "copyrights": "©{year} Antimatter dao Ltd. All rights reserved."
   },
   "language": {
     "en-US": "English",

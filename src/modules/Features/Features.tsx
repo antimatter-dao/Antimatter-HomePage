@@ -42,12 +42,12 @@ export const Features = () => {
                   btnUrl="https://app.bounce.finance/"
                 />
                 {isMDDown && (
-                  <SideScreen screenPath="images/option/screen.png" />
+                  <SideScreen screenPath="images/option/screen.jpg" />
                 )}
               </Grid>
               {isLGUp && (
                 <Grid item xs={12} lg={6}>
-                  <SideScreen screenPath="images/option/screen.png" />
+                  <SideScreen screenPath="images/option/screen.jpg" />
                 </Grid>
               )}
             </Grid>

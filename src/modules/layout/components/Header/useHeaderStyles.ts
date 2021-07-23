@@ -67,6 +67,10 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     color: 'inherit',
     display: 'block',
     padding: '1em',
+    transition: '.2s',
+    '&:hover, &:focus, &:active': {
+      color: '#FF8DB5',
+    },
     [theme.breakpoints.down('lg')]: {
       paddingLeft: theme.spacing(5),
       paddingRight: theme.spacing(5),

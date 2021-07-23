@@ -1,20 +1,23 @@
 import React, { useMemo, useState } from 'react';
-import { t } from '../../../../../../i18n/intl';
 import { Link, Menu, MenuItem } from '@material-ui/core';
 import { uid } from 'react-uid';
-import { useProductsMenuStyles } from './useProductsMenuStyles';
+import { useContactsMenuStyles } from './useContactsMenuStyles';
 import { AngleDownIcon } from '../../../../../common/components/Icons/AngleDownIcon';
 import classNames from 'classnames';
 import { useIsLGDown } from '../../../../../theme';
+import { MediumIcon } from '../../../../../common/components/Icons/MediumIcon';
+import { TwitterIcon } from '../../../../../common/components/Icons/TwitterIcon';
+import { TelegramIcon } from '../../../../../common/components/Icons/TelegramIcon';
+import { GithubIcon } from '../../../../../common/components/Icons/GithubIcon';
 
-interface IProductsMenuProps {
+interface ContactsMenuProps {
   linkClass?: any;
 }
 
-export const ProductsMenu = ({ linkClass }: IProductsMenuProps) => {
+export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
-  const classes = useProductsMenuStyles();
+  const classes = useContactsMenuStyles();
 
   const isLGDown = useIsLGDown();
 
@@ -30,23 +33,39 @@ export const ProductsMenu = ({ linkClass }: IProductsMenuProps) => {
   const menuItems = useMemo(
     () => [
       {
-        label: t('header.products-menu.bounce-decentralized'),
+        label: (
+          <>
+            <MediumIcon />
+            Medium
+          </>
+        ),
         href: 'https://app.bounce.finance/',
       },
       {
-        label: t('header.products-menu.fangible'),
+        label: (
+          <>
+            <TwitterIcon />
+            Twitter
+          </>
+        ),
         href: 'https://fangible.com/',
       },
       {
-        label: t('header.products-menu.bounce-polkadot'),
+        label: (
+          <>
+            <TelegramIcon />
+            Telegram
+          </>
+        ),
         href: 'https://ksm.bounce.finance/',
       },
-      // {
-      //   label: t('header.products-menu.opensource'),
-      //   href: '#', // TODO: need URL
-      // },
       {
-        label: t('header.products-menu.certified'),
+        label: (
+          <>
+            <GithubIcon />
+            Github
+          </>
+        ),
         href: 'https://certified.bounce.finance/',
       },
     ],
@@ -57,12 +76,13 @@ export const ProductsMenu = ({ linkClass }: IProductsMenuProps) => {
     <>
       <Link
         href="/"
-        aria-controls="products-menu"
+        underline="none"
+        aria-controls="contacts-menu"
         aria-haspopup="true"
         onClick={handleClick}
         className={classNames(linkClass, classes.link)}
       >
-        {t('header.products-menu.title')}
+        Contacts
         <AngleDownIcon className={classes.icon} />
       </Link>
       <Menu

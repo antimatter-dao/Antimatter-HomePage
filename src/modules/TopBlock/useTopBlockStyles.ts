@@ -24,6 +24,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     minWidth: '100vw',
     objectFit: 'cover',
     transform: 'translate(-50%, -80%)',
+    [theme.breakpoints.up('md')]: { transform: 'translate(-50%, -60%)' },
     [theme.breakpoints.up('lg')]: {
       width: '65%',
       height: 'auto',
@@ -66,7 +67,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       fontFamily: FONTS.titleBold,
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: 58,
+      fontSize: 50,
       lineHeight: '66px',
       marginBottom: theme.spacing(4),
       maxWidth: 540,
