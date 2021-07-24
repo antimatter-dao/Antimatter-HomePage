@@ -33,19 +33,11 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
   const menuItems = useMemo(
     () => [
       {
-        label: (
-          <>
-            Perpetual Option Testnet
-          </>
-        ),
+        label: <>Perpetual Option Testnet</>,
         href: 'https://test.antimatter.finance/#/option_trading',
       },
       {
-        label: (
-          <>
-            Non-fungible finance (Coming Soon)
-          </>
-        ),
+        label: <>Non-fungible finance (Coming Soon)</>,
         href: '',
       },
     ],
@@ -85,6 +77,7 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
         {menuItems.map(item => {
           return (
             <MenuItem
+              target="_blank"
               key={uid(item)}
               component={Link}
               href={item.href}

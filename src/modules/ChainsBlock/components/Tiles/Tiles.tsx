@@ -41,7 +41,7 @@ export const Tiles = () => {
               <Button
                 className={classNames(classes.tileBtn, classes.gradientGreen)}
                 variant="contained"
-                href="https://app.bounce.finance/"
+                href="https://test.antimatter.finance/#/"
                 role="link"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -49,7 +49,7 @@ export const Tiles = () => {
                 {t('common.launch-app')}
               </Button>
               <Button
-                onClick={() => scrollToHandle('bounce-auction')}
+                onClick={() => scrollToHandle('features')}
                 className={classes.tileMore}
                 variant="text"
                 role="link"
@@ -85,15 +85,13 @@ export const Tiles = () => {
               <Button
                 className={classNames(classes.tileBtn, classes.gradientRed)}
                 variant="contained"
-                href="https://fangible.com/"
-                role="link"
-                rel="noopener noreferrer"
-                target="_blank"
+                role="button"
+                onClick={() => {}}
               >
                 Coming soon
               </Button>
               <Button
-                onClick={() => scrollToHandle('fangible')}
+                onClick={() => scrollToHandle('NFT')}
                 className={classes.tileMore}
                 variant="text"
                 role="link"
