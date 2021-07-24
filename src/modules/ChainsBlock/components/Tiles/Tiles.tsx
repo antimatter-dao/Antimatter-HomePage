@@ -90,7 +90,7 @@ export const Tiles = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                {t('common.launch-app')}
+                Coming soon
               </Button>
               <Button
                 onClick={() => scrollToHandle('fangible')}

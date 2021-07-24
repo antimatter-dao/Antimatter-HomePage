@@ -17,6 +17,8 @@ export const useFooterStyles = makeStyles<Theme>(theme => ({
 
   container: {
     maxWidth: 1980,
+    paddingLeft: 32,
+    paddingRight: 32
   },
 
   col: {

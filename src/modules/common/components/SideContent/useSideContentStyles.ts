@@ -3,7 +3,7 @@ import { FONTS, PALETTE } from '../../../theme/mainTheme';
 
 export const useSideContentStyles = makeStyles<Theme>(theme => ({
   root: {
-    marginTop: theme.spacing(4.5),
+    marginTop: 60,
     color: ({ isWhite }: { isWhite?: boolean }) =>
       isWhite ? '#ffffff' : PALETTE.text.primary,
     paddingRight: theme.spacing(4),
@@ -14,7 +14,7 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
       paddingRight: theme.spacing(8),
     },
     [theme.breakpoints.up('lg')]: {
-      paddingRight: theme.spacing(12.5),
+      paddingRight: 60,
     },
   },
 
@@ -23,9 +23,9 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
     flexWrap: 'nowrap',
     alignItems: 'center',
     flexDirection: 'row',
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(2.6),
     [theme.breakpoints.up('lg')]: {
-      marginBottom: theme.spacing(2),
+      marginBottom: 20,
     },
   },
   brandLogo: {

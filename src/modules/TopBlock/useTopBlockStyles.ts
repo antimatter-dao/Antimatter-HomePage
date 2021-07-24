@@ -27,7 +27,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     transform: 'translate(-50%, -80%)',
     [theme.breakpoints.up('md')]: { transform: 'translate(-50%, -60%)' },
     [theme.breakpoints.up('lg')]: {
-      width: '65%',
+      width: '68%',
       height: 'auto',
       minWidth: 'unset',
       transform: 'translate(13%, -55%)',

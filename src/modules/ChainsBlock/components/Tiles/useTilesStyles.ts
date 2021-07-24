@@ -10,7 +10,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
       maxWidth: '100%',
     },
     [theme.breakpoints.up('lg')]: {
-      maxWidth: '80%',
+      maxWidth: '90%',
     },
     margin: '0 auto',
     width: 'auto',

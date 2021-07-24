@@ -54,12 +54,12 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     borderRadius: 27,
     color: '#ffffff',
     background:
-      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) -48.61%, rgba(255, 255, 255, 0) 86.17%, rgba(255, 255, 255, 0.5) 219.44%), linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.4) 123.86%), #9FEA38;',
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.4) 123.86%), #9FEA38;'
   },
   features: {
     fontSize: 24,
     fontWeight: 500,
-    [theme.breakpoints.up('xl')]: { margin: '50px 10% 0' },
+    [theme.breakpoints.up('xl')]: { margin: '0px 88px 0' },
     '& .features': {
       whiteSpace: 'nowrap',
       fontFamily: FONTS.medium,
@@ -69,7 +69,7 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
       [theme.breakpoints.up('md')]: {
         fontWeight: 500,
         fontSize: 24,
-        marginTop: 100,
+        marginTop: 0,
       },
     },
     '& ul': {

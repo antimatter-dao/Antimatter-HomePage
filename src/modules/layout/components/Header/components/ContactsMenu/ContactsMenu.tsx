@@ -82,7 +82,7 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
         onClick={handleClick}
         className={classNames(linkClass,classes.mainLink)}
       >
-        Contacts
+        Contact
         <AngleDownIcon className={classes.icon} />
       </Link>
       <Menu

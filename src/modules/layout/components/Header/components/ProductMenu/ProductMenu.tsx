@@ -38,7 +38,7 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
             Perpetual Option Testnet
           </>
         ),
-        href: 'https://app.antimatter.finance/#/option_trading',
+        href: 'https://test.antimatter.finance/#/option_trading',
       },
       {
         label: (

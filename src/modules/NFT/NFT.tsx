@@ -27,7 +27,7 @@ export const NFT = () => {
                   text={
                     'The real use-case for NFTs lies in wrapping and packaging financial products'
                   }
-                  btnUrl="https://fangible.com/"
+                  btnUrl=""
                   smallTitleStyle
                 >
                   <Box className={classes.features}>
