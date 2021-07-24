@@ -65,7 +65,7 @@ class MyDocument extends Document<Props> {
             content={t('common.og.description')}
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://bounce.finance/" />
+          <meta property="og:url" content="https://antimatter.finance/" />
           <meta property="og:image" content="/images/social-share.jpg" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/images/logo.png" />
