@@ -37,7 +37,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     display: 'block',
     borderRadius: 40,
     position: 'relative',
-    padding: theme.spacing(3.5, 3.5),
+    padding: theme.spacing(3.5, 1),
     height: '100%',
     minHeight: 160,
     overflow: 'hidden',
@@ -113,6 +113,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     marginRight: 21,
     fontSize: 16,
     fontWeight: 500,
+    whiteSpace: 'nowrap',
     [theme.breakpoints.up('xl')]: {
       height: 60,
       width: 240,
@@ -125,11 +126,15 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     padding: 0,
     height: 52,
     color: 'inherit',
-    [theme.breakpoints.up('md')]: {
-      height: 60,
-    },
     '& svg': {
       marginLeft: 10,
+      transform: 'scale(80%)',
+    },
+    [theme.breakpoints.up('md')]: {
+      height: 60,
+      '& svg': {
+        width: 'auto',
+      },
     },
   },
   gradientRed: {

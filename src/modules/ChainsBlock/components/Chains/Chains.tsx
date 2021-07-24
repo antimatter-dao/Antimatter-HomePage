@@ -62,7 +62,7 @@ export const Chains = () => {
         </WithAnimation>
       </WithAnimation>
 
-      <div className={classes.root}>
+      <div className={classes.root} id="chain-wrap">
         {isXLUp ? (
           <WithAnimation
             className={classes.itemsDesktop}

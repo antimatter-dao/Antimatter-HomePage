@@ -14,7 +14,17 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     paddingBottom: theme.spacing(10),
     pointerEvents: 'auto',
     borderRadius: '0 0 60px 60px',
-    marginBottom: 32,
+    marginBottom: 100,
+    '&::after': {
+      position: 'absolute',
+      bottom: -100,
+      content: `''`,
+      display: 'block',
+      height: 200,
+      width: '100%',
+      zIndex: -1,
+      backgroundColor: theme.palette.background.default,
+    },
     '&::before': {
       content: `''`,
       display: 'block',

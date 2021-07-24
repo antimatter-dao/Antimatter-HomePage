@@ -56,43 +56,59 @@ export const Features = () => {
             <WithAnimation>
               <div className="features">Features</div>
             </WithAnimation>
-            <Grid container spacing={5}>
-              <Grid item xs={12} md={4}>
-                <WithAnimation>
-                  <ul>
-                    <li>Non-custodial 24/7 global options tradin</li>
-                    <li>No liquidation risk among all Call / Put options</li>
-                    <li>
-                      Verified on-chain settlement of each option contract{' '}
-                    </li>
-                  </ul>
-                </WithAnimation>
-              </Grid>
+            {isLGUp ? (
+              <Grid container spacing={5}>
+                <Grid item xs={12} md={4}>
+                  <WithAnimation>
+                    <ul>
+                      <li>Non-custodial 24/7 global options tradin</li>
+                      <li>No liquidation risk among all Call / Put options</li>
+                      <li>
+                        Verified on-chain settlement of each option contract{' '}
+                      </li>
+                    </ul>
+                  </WithAnimation>
+                </Grid>
 
-              <Grid item xs={12} md={4}>
-                <WithAnimation>
-                  <ul>
-                    <li>No funding fees</li>
-                    <li>
-                      Underlying assets fully backed for Call / Put options
-                    </li>
-                    <li>Permissionless for everyone to issue options </li>
-                  </ul>
-                </WithAnimation>
-              </Grid>
+                <Grid item xs={12} md={4}>
+                  <WithAnimation>
+                    <ul>
+                      <li>No funding fees</li>
+                      <li>
+                        Underlying assets fully backed for Call / Put options
+                      </li>
+                      <li>Permissionless for everyone to issue options </li>
+                    </ul>
+                  </WithAnimation>
+                </Grid>
 
-              <Grid item xs={12} md={4}>
-                <WithAnimation>
-                  <ul>
-                    <li>No external oracle</li>
-                    <li>
-                      Exercise at any moment during the period of holding a
-                      contract
-                    </li>
-                  </ul>
-                </WithAnimation>
+                <Grid item xs={12} md={4}>
+                  <WithAnimation>
+                    <ul>
+                      <li>No external oracle</li>
+                      <li>
+                        Exercise at any moment during the period of holding a
+                        contract
+                      </li>
+                    </ul>
+                  </WithAnimation>
+                </Grid>
               </Grid>
-            </Grid>
+            ) : (
+              <WithAnimation>
+                <ul>
+                  <li>Non-custodial 24/7 global options tradin</li>
+                  <li>No liquidation risk among all Call / Put options</li>
+                  <li>Verified on-chain settlement of each option contract </li>
+                  <li>No funding fees</li>
+                  <li>Underlying assets fully backed for Call / Put options</li>
+                  <li>Permissionless for everyone to issue options </li>
+                  <li>No funding fees</li>
+                  <li>Underlying assets fully backed for Call / Put options</li>
+                  <li>Permissionless for everyone to issue options </li>
+                </ul>
+              </WithAnimation>
+            )}
           </Box>
         </div>
       </div>

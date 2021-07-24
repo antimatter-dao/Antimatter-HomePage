@@ -3,7 +3,6 @@ import { FONTS, PALETTE } from '../../../theme/mainTheme';
 
 export const useSideContentStyles = makeStyles<Theme>(theme => ({
   root: {
-    marginTop: 60,
     color: ({ isWhite }: { isWhite?: boolean }) =>
       isWhite ? '#ffffff' : PALETTE.text.primary,
     paddingRight: theme.spacing(4),
@@ -15,6 +14,7 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
     },
     [theme.breakpoints.up('lg')]: {
       paddingRight: 60,
+      marginTop: 60,
     },
   },
 
