@@ -15,6 +15,7 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
       display: 'block',
       content: `''`,
       paddingTop: '70%',
+      [theme.breakpoints.up('md')]: { paddingTop: '100%' },
     },
   },
   screenInView: {},
@@ -41,6 +42,7 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
       height: '80%',
     },
     [theme.breakpoints.up('md')]: {
+      width: 'unset',
       left: 100,
       top: 94,
     },
