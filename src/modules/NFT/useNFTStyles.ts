@@ -13,14 +13,16 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     marginRight: 0,
     paddingBottom: theme.spacing(10),
     pointerEvents: 'auto',
-    borderRadius: '0 0 60px 60px',
-    marginBottom: 100,
+    borderRadius: '0 0 30px 30px',
+    marginBottom: 140,
+    maxWidth: 1440,
+    width: '100%',
     '&::after': {
       position: 'absolute',
-      bottom: -100,
+      bottom: -150,
       content: `''`,
       display: 'block',
-      height: 200,
+      height: 300,
       width: '100%',
       zIndex: -1,
       backgroundColor: theme.palette.background.default,
@@ -33,9 +35,14 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
       width: '100%',
       background: 'rgba(35, 35, 35, 1)',
       height: 60,
-      borderRadius: '60px 60px 0 0',
+      borderRadius: '30px 30px 0 0',
+      [theme.breakpoints.up('lg')]: {
+        top: -119,
+        height: 120,
+      },
     },
     [theme.breakpoints.up('lg')]: {
+      marginBottom: 100,
       paddingBottom: theme.spacing(23),
       borderRadius: '0 0 120px 120px',
       '&::before': {
@@ -43,8 +50,8 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
       },
     },
     [theme.breakpoints.up('lg')]: {
-      marginLeft: 32,
-      marginRight: 32,
+      marginLeft: 'auto',
+      marginRight: 'auto',
     },
   },
   wrap: {
@@ -52,7 +59,10 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
   },
   topContainer: {
-    [theme.breakpoints.up('lg')]: { padding: '0 88px' },
+    [theme.breakpoints.up('lg')]: {
+      padding: '0 88px',
+      transform: 'translateY(-50px)',
+    },
   },
   NFTCapsule: {
     padding: '9px 20px',

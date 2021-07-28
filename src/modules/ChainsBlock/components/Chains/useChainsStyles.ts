@@ -160,7 +160,7 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
         width: 50,
       },
       '&:nth-child(5)': {
-        top: '75%',
+        top: '85%',
         left: '55%',
         height: 66,
         width: 66,

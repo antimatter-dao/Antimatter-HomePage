@@ -12,10 +12,11 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     pointerEvents: 'auto',
     background: '#ffffff url(./images/ellipse.png) no-repeat center -15%',
     backgroundSize: '100% 50%',
-    marginLeft: 0,
+    marginLeft: '0',
     marginRight: 0,
     marginBottom: 32,
-    borderRadius: '0 0 60px 60px',
+    borderRadius: '0 0 30px 30px',
+    maxWidth: 1440,
     '&::before': {
       content: `''`,
       display: 'block',
@@ -23,14 +24,15 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
       top: -59,
       width: '100%',
       height: 60,
-      borderRadius: '60px 60px 0 0',
+      borderRadius: '30px 30px 0 0',
       background: '#ffffff url(./images/ellipse.png) no-repeat center 10% ',
       backgroundSize: '100% auto',
+      [theme.breakpoints.up('lg')]: { top: -119, height: 120 },
     },
     [theme.breakpoints.up('lg')]: {
       paddingBottom: theme.spacing(23),
-      marginLeft: 32,
-      marginRight: 32,
+      marginLeft: 'auto',
+      marginRight: 'auto',
       borderRadius: '0 0 80px 80px',
       '&::before': {
         borderRadius: '80px 80px 0 0',
@@ -46,7 +48,10 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
   },
   container: {
-    [theme.breakpoints.up('lg')]: { padding: '0 88px' },
+    [theme.breakpoints.up('lg')]: {
+      padding: '0 88px',
+      transform: 'translateY(-50px)',
+    },
   },
   featuresCapsule: {
     padding: '9px 20px',

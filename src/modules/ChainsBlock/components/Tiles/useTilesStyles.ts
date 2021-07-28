@@ -17,7 +17,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     justifyContent: 'center',
   },
   tileItem: {
-    margin: '0 20px',
+    margin: '0 16px',
     [theme.breakpoints.up('lg')]: {
       margin: 0,
     },
@@ -37,7 +37,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     display: 'block',
     borderRadius: 40,
     position: 'relative',
-    padding: theme.spacing(3.5, 1),
+    padding: '24px 18px',
     height: '100%',
     minHeight: 160,
     overflow: 'hidden',
@@ -66,6 +66,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
   },
   tileTop: {
     fontFamily: FONTS.title,
+    whiteSpace: 'nowrap',
     display: 'flex',
     width: '100%',
     flexWrap: 'nowrap',
@@ -82,7 +83,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     position: 'absolute',
     opacity: 1,
     transition: '0.5s',
-    bottom: theme.spacing(3.5),
+    bottom: 24,
     [theme.breakpoints.up('lg')]: {
       bottom: theme.spacing(4.5),
       opacity: 0,

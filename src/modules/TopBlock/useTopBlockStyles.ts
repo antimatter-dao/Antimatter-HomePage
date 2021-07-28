@@ -11,6 +11,9 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
     position: 'relative',
     transform: 'translateY(-200px)',
+    maxWidth: 1440,
+    width: '100%',
+    margin: '0 auto',
     [theme.breakpoints.up('md')]: {
       minHeight: '100vh',
       boxSizing: 'content-box',
@@ -53,7 +56,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     alignItems: 'flex-start',
     [theme.breakpoints.up('lg')]: {
       paddingBottom: 200,
-      paddingLeft: 90
+      paddingLeft: 90,
     },
     [theme.breakpoints.down('md')]: {
       paddingTop: 400,
@@ -81,7 +84,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     [theme.breakpoints.up('lg')]: {
       maxWidth: 568,
       marginTop: 50,
-      paddingLeft: 50
+      paddingLeft: 50,
     },
   },
   filler: {
