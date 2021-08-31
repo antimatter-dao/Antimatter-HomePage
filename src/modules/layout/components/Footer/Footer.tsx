@@ -13,7 +13,6 @@ export const Footer = () => {
       <Container maxWidth={false} className={classes.container}>
         <Grid container spacing={3} alignItems="center">
           <Grid item xs={12} md className={classes.col}>
-             Antimatter Token contract: 0x9b99cca871be05119b2012fd4474731dd653febe<br/>
             {t('footer.copyrights', {
               year: new Date().getFullYear(),
             })}
