@@ -1,16 +1,15 @@
 import { makeStyles, Theme } from '@material-ui/core';
-import { FONTS } from '../theme/mainTheme';
+import { FONTS } from '../../theme/mainTheme';
 
-export const useBackedByStyles = makeStyles<Theme>(theme => ({
+export const useStrategicPartnerStyles = makeStyles<Theme>(theme => ({
   root: {
     position: 'relative',
-    zIndex: 3,
+    zIndex: 2,
     padding: theme.spacing(8, 0),
-    background: '#ffffff url(./images/ellipse_blue.svg) no-repeat center -350%',
-    backgroundSize: '500% 90%',
+    background: '#232323',
     borderRadius: '30px',
-    minHeight: '100vh',
     maxWidth: 1440,
+    overflow: 'hidden',
     [theme.breakpoints.up('lg')]: {
       paddingTop: 100,
       minHeight: 'unset',
@@ -18,12 +17,37 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
       marginRight: 'auto',
       paddingBottom: 120,
       borderRadius: '120px',
-      background:
-        '#ffffff url(./images/ellipse_blue.svg) no-repeat center 460%',
-      backgroundSize: '200% 90%',
     },
   },
-  container: {},
+  '@keyframes roll': {
+    '0%': {
+      transform: 'translateX(0%)',
+    },
+    '100%': {
+      transform: 'translateX(-50%)',
+    },
+  },
+  marquee: {
+    display: 'flex',
+    width: 'max-content',
+    willChange: 'transform, opacity',
+    opacity: 0.8,
+    animation: '$roll 20s infinite linear',
+    gap: 20,
+    transitionDelay: '0.3s',
+    '& img': {
+      maxHeight: '100%',
+      objectFit: 'cover',
+    },
+  },
+  marqueeInView: {
+    opacity: 1,
+  },
+  marqueeWrapper: {
+    overflow: 'hidden',
+    width: '100%',
+    position: 'relative',
+  },
   title: {
     fontSize: 24,
     fontFamily: FONTS.title,
@@ -33,7 +57,8 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     [theme.breakpoints.up('md')]: {
       fontSize: 44,
       lineHeight: '66px',
-      marginBottom: theme.spacing(10),
+      marginBottom: 150,
+      marginTop: 14,
     },
   },
   imgWrap: {
@@ -42,12 +67,10 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     alignContent: 'center',
     justifyContent: 'center',
     alignItems: 'center',
-    minHeight: 100,
-    padding: theme.spacing(2),
-    '&:nth-child(2n)': {
-      transitionDelay: '0.3s',
-    },
-    [theme.breakpoints.up('md')]: {
+    minHeight: 80,
+    padding: 0,
+    [theme.breakpoints.up('md')]: { padding: theme.spacing(2), minHeight: 100 },
+    [theme.breakpoints.down('md')]: {
       '&:nth-child(3n+1)': {
         transitionDelay: 0,
       },
@@ -60,15 +83,9 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     },
   },
   img: {
-    maxWidth: '100%',
+    maxWidth: '70%',
     height: 'auto',
-  },
-  profile: {
-    maxWidth: '100%',
-    height: 'auto',
-    [theme.breakpoints.down('sm')]: {
-      width: 72,
-    },
+    [theme.breakpoints.up('md')]: { maxWidth: '100%' },
   },
 
   name: {
@@ -76,20 +93,5 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     display: 'block',
     marginTop: 10,
     textAlign: 'center',
-  },
-  filler: {
-    position: 'relative',
-    '&::before': {
-      position: 'absolute',
-      top: '-25vh',
-      content: `''`,
-      height: '100vh',
-      width: '100%',
-      zIndex: 1,
-      display: 'block',
-      [theme.breakpoints.up('lg')]: {
-        backgroundColor: theme.palette.background.default,
-      },
-    },
   },
 }));

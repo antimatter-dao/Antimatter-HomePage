@@ -1,7 +1,7 @@
 import { makeStyles, Theme } from '@material-ui/core';
 import { PARALLAX_MARGIN } from '../theme/const';
 
-export const useWithScrollFreezingStyles = makeStyles<Theme>(() => ({
+export const useWithScrollFreezingStyles = makeStyles<Theme>(theme => ({
   root: {},
   floatingWrap: {
     paddingTop: PARALLAX_MARGIN,
@@ -20,6 +20,11 @@ export const useWithScrollFreezingStyles = makeStyles<Theme>(() => ({
     right: 0,
     bottom: 0,
     zIndex: 1,
+    '& #backed-by': {
+      borderRadius: '0 0 30px 30px',
+      transform: 'translateY(-60px)',
+      height: 'calc(auto + 60px)',
+    },
   },
   chainBlockFixed: {
     position: 'fixed',

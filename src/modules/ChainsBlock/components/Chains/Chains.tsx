@@ -2,11 +2,10 @@ import React, { useMemo } from 'react';
 import { useChainsStyles } from './useChainsStyles';
 import { WithAnimation } from '../../../WithAnimation';
 import { Typography } from '@material-ui/core';
-import { useIsXLUp } from '../../../theme';
+import { useIsLGUp, useIsMDDown } from '../../../theme';
 import { EthereumIcon } from '../../../common/components/Icons/EthereumIcon';
 import { BSCIcon } from '../../../common/components/Icons/BSCIcon';
 import { HuobiIcon } from '../../../common/components/Icons/Huobi';
-import { KusamaIcon } from '../../../common/components/Icons/KusamaIcon';
 import { PolygonIcon } from '../../../common/components/Icons/PolygonIcon';
 import { SolanaIcon } from '../../../common/components/Icons/SolanaIcon';
 import { ChainItem } from '../ChainItem';
@@ -16,7 +15,8 @@ import { Icon } from '../../../common/components/Icons/Icon';
 export const Chains = () => {
   const classes = useChainsStyles();
 
-  const isXLUp = useIsXLUp();
+  const isLGUp = useIsLGUp();
+  const isMDDown = useIsMDDown();
 
   const items = useMemo(
     () => [
@@ -55,7 +55,7 @@ export const Chains = () => {
         Component={Typography}
         variant="h2"
       >
-        Multi-chain ecosystem
+        Multi-chain {isMDDown && <br />}ecosystem
         <WithAnimation className={classes.text} Component={Typography}>
           Antimatter products are available across multiple blockchains:
           Ethereum, Binance smart chain, Huobi eco chain, Polygon and Solana.
@@ -63,7 +63,7 @@ export const Chains = () => {
       </WithAnimation>
 
       <div className={classes.root} id="chain-wrap">
-        {isXLUp ? (
+        {isLGUp ? (
           <WithAnimation
             className={classes.itemsDesktop}
             rootMargin="10%"

@@ -13,11 +13,13 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     transform: 'translateY(-200px)',
     maxWidth: 1440,
     width: '100%',
-    margin: '0 auto',
+    margin: '0',
+    marginBottom: 170,
     [theme.breakpoints.up('md')]: {
       minHeight: '100vh',
       boxSizing: 'content-box',
       alignItems: 'center',
+      marginBottom: 0,
     },
   },
   video: {

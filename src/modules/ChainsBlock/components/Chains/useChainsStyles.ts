@@ -9,7 +9,18 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
     left: 0,
     overflow: 'hidden',
     height: 'calc(100% - 130px)',
-    [theme.breakpoints.up('lg')]: { height: '100%' },
+    transform: 'translateY(30px)',
+    [theme.breakpoints.up('md')]: {
+      height: '100%',
+      transform: 'scale(0.9) translateY(96px)',
+      transformOrigin: 'bottom right',
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '100%',
+      transform: 'scale(0.8)',
+      transformOrigin: 'bottom right',
+    },
+    [theme.breakpoints.up('xl')]: { transform: 'unset' },
   },
   title: {
     position: 'absolute',
@@ -21,7 +32,7 @@ export const useChainsStyles = makeStyles<Theme>(theme => ({
     maxWidth: 328,
     [theme.breakpoints.up('md')]: {
       fontSize: 44,
-      top: 300,
+      top: 200,
       marginLeft: 60,
       maxWidth: 'unset',
     },
