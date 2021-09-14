@@ -1,4 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core';
+import { PARALLAX_MARGIN } from '../theme/const';
 import { FONTS } from '../theme/mainTheme';
 
 export const useBackedByStyles = makeStyles<Theme>(theme => ({
@@ -11,12 +12,13 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     borderRadius: '30px',
     minHeight: '100vh',
     maxWidth: 1440,
+    paddingBottom: 120 + PARALLAX_MARGIN,
     [theme.breakpoints.up('lg')]: {
+      paddingBottom: 120,
       paddingTop: 100,
       minHeight: 'unset',
       marginLeft: 'auto',
       marginRight: 'auto',
-      paddingBottom: 120,
       borderRadius: '120px',
       background:
         '#ffffff url(./images/ellipse_blue.svg) no-repeat center 460%',
