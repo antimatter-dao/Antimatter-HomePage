@@ -126,7 +126,7 @@ export const Tiles = () => {
         rootMargin="0%"
       >
         <div className={classNames(classes.tileItemContent)}>
-          <div className={classes.tileTop}>Nonfungible {'\n'}Dao</div>
+          <div className={classes.tileTop}>Antimatter {'\n'}Dao</div>
           <div
             className={classNames(classes.tileCount, classes.gradientPurple)}
           >

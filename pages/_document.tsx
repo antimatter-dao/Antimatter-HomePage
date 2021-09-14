@@ -49,7 +49,7 @@ class MyDocument extends Document<Props> {
       <Html lang={'en-US'} dir="ltr">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width,initial-scale=1" />
+          {/* <meta name="viewport" content="width=device-width,initial-scale=1" /> */}
           <meta name="theme-color" content="#000000" />
           <link
             rel="shortcut icon"
@@ -69,7 +69,7 @@ class MyDocument extends Document<Props> {
           <meta property="og:image" content="/images/social-share.jpg" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/images/logo.png" />
-          <title>{t('common.site-title')}</title>
+          {/* <title>{t('common.site-title')}</title> */}
         </Head>
         <body>
           <Main />

@@ -5,10 +5,6 @@ import { useProductMenuStyles } from './useProductMenuStyles';
 import { AngleDownIcon } from '../../../../../common/components/Icons/AngleDownIcon';
 import classNames from 'classnames';
 import { useIsLGDown } from '../../../../../theme';
-import { MediumIcon } from '../../../../../common/components/Icons/MediumIcon';
-import { TwitterIcon } from '../../../../../common/components/Icons/TwitterIcon';
-import { TelegramIcon } from '../../../../../common/components/Icons/TelegramIcon';
-import { GithubIcon } from '../../../../../common/components/Icons/GithubIcon';
 
 interface ProductMenuProps {
   linkClass?: any;
@@ -38,6 +34,10 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
       },
       {
         label: <>Non-fungible finance (Coming Soon)</>,
+        href: '',
+      },
+      {
+        label: <>Antimatter Dao (Coming Soon)</>,
         href: '',
       },
     ],

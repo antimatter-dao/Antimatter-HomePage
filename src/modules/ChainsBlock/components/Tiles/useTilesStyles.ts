@@ -55,7 +55,7 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     '&:hover $tileContent': {
       opacity: 1,
     },
-    '&:hover $tileTitle': {
+    '&:hover $tileTop': {
       marginBottom: theme.spacing(1),
       [theme.breakpoints.up('md')]: {
         marginBottom: theme.spacing(2.5),

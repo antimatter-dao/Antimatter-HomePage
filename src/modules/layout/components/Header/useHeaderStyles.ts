@@ -80,6 +80,9 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
       display: 'inline-block',
       padding: '0.5em',
     },
+    [theme.breakpoints.down('xs')]: {
+      paddingLeft: 15,
+    },
   },
 
   buttons: {
@@ -155,6 +158,9 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
 
   mobileMenuDivider: {
     margin: theme.spacing(3, 5),
+    [theme.breakpoints.down('xs')]: {
+      margin: theme.spacing(3, 3),
+    },
   },
 
   '@keyframes mobileMenuLinks': {

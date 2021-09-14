@@ -15,7 +15,14 @@ export const BottomBlock = () => {
           Want to be aware of all the news and updates? Read our blog
         </WithAnimation>
         <WithAnimation className={classes.blogButton}>
-          <Button>Go to Medium</Button>
+          <Button
+            component="a"
+            href="https://medium.com/@antimatterdefi"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Go to Medium
+          </Button>
         </WithAnimation>
       </div>
     </div>

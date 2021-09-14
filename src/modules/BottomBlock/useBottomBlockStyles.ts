@@ -72,7 +72,7 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
   },
   blogButton: {
     textAlign: 'center',
-    '& button': {
+    '& a': {
       transitionDelay: '0.6s',
       padding: '15px 68px',
       fontSize: 16,
