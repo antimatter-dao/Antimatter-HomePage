@@ -83,6 +83,9 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     [theme.breakpoints.up('lg')]: {
       whiteSpace: 'pre-wrap',
     },
+    [theme.breakpoints.up('xl')]: {
+      whiteSpace: 'nowrap',
+    },
   },
   tileCount: {
     position: 'absolute',

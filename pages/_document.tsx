@@ -9,7 +9,9 @@ import Document, {
 import React from 'react';
 import flush from 'styled-jsx/server';
 import { t } from '../src/i18n/intl';
-// import intl from 'react-intl-universal';
+import intl from 'react-intl-universal';
+import { locales } from '../src/i18n';
+import { Locale } from '../src/i18n/types/locale';
 
 type Props = {};
 
@@ -19,6 +21,15 @@ type Props = {};
 class MyDocument extends Document<Props> {
   static getInitialProps = async (ctx: DocumentContext): Promise<any> => {
     // Render app and page and get the context of the page with collected side effects.
+
+    intl
+      .init({
+        currentLocale: 'en-US',
+        locales,
+        fallbackLocale: Locale.en,
+      })
+      .catch(err => console.error(err));
+
     const sheets = new ServerStyleSheets();
 
     const originalRenderPage = ctx.renderPage;

@@ -33,10 +33,10 @@ export const LocaleSwitcher = ({ linkClass }: ILocalSwitcherProps) => {
         value: Locale.en,
         label: t('language.en-US'),
       },
-      {
-        value: Locale.zh,
-        label: t('language.zh-CN'),
-      },
+      // {
+      //   value: Locale.zh,
+      //   label: t('language.zh-CN'),
+      // },
     ],
     [],
   );
