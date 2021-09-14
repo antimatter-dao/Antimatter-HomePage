@@ -21,6 +21,8 @@ export const StrategicPartner = () => {
     'bounce.svg',
     'huobi-eco.svg',
     'linear.svg',
+    'wintermute.svg',
+    'element-fi.svg',
   ];
 
   return (
