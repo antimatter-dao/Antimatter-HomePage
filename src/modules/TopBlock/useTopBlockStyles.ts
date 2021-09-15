@@ -19,7 +19,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       minHeight: '100vh',
       boxSizing: 'content-box',
       alignItems: 'center',
-      marginBottom: 0,
+      margin: '0 auto',
     },
   },
   video: {
