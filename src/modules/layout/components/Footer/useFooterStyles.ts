@@ -18,15 +18,19 @@ export const useFooterStyles = makeStyles<Theme>(theme => ({
   container: {
     maxWidth: 1980,
     paddingLeft: 32,
-    paddingRight: 32
+    paddingRight: 32,
   },
 
   col: {
     display: 'flex',
     justifyContent: 'center',
-
+    whiteSpace: 'nowrap',
+    flexDirection: 'column',
+    alignItems: 'center',
     [theme.breakpoints.up('md')]: {
       justifyContent: 'flex-start',
+      flexDirection: 'row',
+      alignItems: 'center',
     },
   },
 
@@ -34,6 +38,13 @@ export const useFooterStyles = makeStyles<Theme>(theme => ({
     fontSize: 20,
     [theme.breakpoints.up('md')]: {
       justifyContent: 'flex-end',
+    },
+  },
+  disclaimer: {
+    cursor: 'pointer',
+    textDecoration: 'underline',
+    '&:hover': {
+      textDecoration: 'none',
     },
   },
 }));
