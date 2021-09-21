@@ -37,8 +37,8 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
         href: 'https://test.antimatter.finance/#/option_trading',
       },
       {
-        label: <>Non-fungible finance (Coming Soon)</>,
-        href: '',
+        label: <>Non-fungible finance</>,
+        href: 'https://nonfungible.finance/#/',
       },
     ],
     [],
