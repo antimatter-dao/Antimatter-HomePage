@@ -46,7 +46,7 @@ export const Footer = () => {
               className={classes.disclaimer}
               style={{ width: 'fit-content' }}
             >
-              Notice and disclaimer
+              Notice and Disclaimer
             </span>
           </Grid>
 
