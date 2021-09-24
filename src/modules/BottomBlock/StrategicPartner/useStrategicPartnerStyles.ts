@@ -37,7 +37,7 @@ export const useStrategicPartnerStyles = makeStyles<Theme>(theme => ({
     transitionDelay: '0.3s',
     '& img': {
       maxHeight: '100%',
-      objectFit: 'cover',
+      objectFit: 'contain',
     },
   },
   marqueeInView: {

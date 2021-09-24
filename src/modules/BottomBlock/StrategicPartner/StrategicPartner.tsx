@@ -22,6 +22,10 @@ export const StrategicPartner = () => {
     'linear.svg',
     'wintermute.svg',
     'element-fi.svg',
+    'avalanche.svg',
+    'pangolin.svg',
+    'sushi.png',
+    'near.svg',
   ];
 
   return (
