@@ -20,7 +20,7 @@ export const StrategicPartner = () => {
     'bounce.svg',
     'huobi-eco.svg',
     'linear.svg',
-    'wintermute.svg',
+    'alameda-research.png',
     'element-fi.svg',
     'avalanche.svg',
     'pangolin.svg',
