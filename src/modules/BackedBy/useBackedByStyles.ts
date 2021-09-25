@@ -1,4 +1,5 @@
 import { makeStyles, Theme } from '@material-ui/core';
+import { url } from 'inspector';
 import { PARALLAX_MARGIN } from '../theme/const';
 import { FONTS } from '../theme/mainTheme';
 
@@ -91,6 +92,28 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
       display: 'block',
       [theme.breakpoints.up('lg')]: {
         backgroundColor: theme.palette.background.default,
+      },
+    },
+  },
+  twitter: {
+    zIndex: 10,
+    background:
+      'url(/images/backed-by/twitter/twitter.svg) center center no-repeat',
+    backgroundSize: 'contain',
+    padding: 0,
+    marginLeft: 8,
+    height: 16,
+    width: 16,
+    minWidth: 'unset',
+    '&:hover, &:active': {
+      '&[data-index="0"]': {
+        backgroundImage: 'url(/images/backed-by/twitter/twitter0.png)',
+      },
+      '&[data-index="1"]': {
+        backgroundImage: 'url(/images/backed-by/twitter/twitter1.png)',
+      },
+      '&[data-index="2"]': {
+        backgroundImage: 'url(/images/backed-by/twitter/twitter2.png)',
       },
     },
   },

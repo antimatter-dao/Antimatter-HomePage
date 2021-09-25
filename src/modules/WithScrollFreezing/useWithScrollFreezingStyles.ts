@@ -7,7 +7,7 @@ export const useWithScrollFreezingStyles = makeStyles<Theme>(theme => ({
     paddingTop: PARALLAX_MARGIN,
     transition: 'transform 0.5s, filter 0.5s',
     willChange: 'transform, filter',
-    pointerEvents: 'none',
+    // pointerEvents: 'none',
   },
   notFixed: {
     position: 'relative',

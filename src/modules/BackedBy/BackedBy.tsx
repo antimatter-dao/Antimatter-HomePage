@@ -6,13 +6,15 @@ import {
   Typography,
   useTheme,
   useMediaQuery,
+  Button,
 } from '@material-ui/core';
 import { t } from '../../i18n/intl';
 import { uid } from 'react-uid';
 import { WithAnimation } from '../WithAnimation';
 import { WithScrollFreezing } from '../WithScrollFreezing';
 
-const name = (string: string) => {
+const name = (string?: string) => {
+  if (!string) return '';
   return string
     .slice(0, -4)
     .split('-')
@@ -40,10 +42,10 @@ const BackedByCore = () => {
   const classes = useBackedByStyles();
 
   const names = [
-    'tekin-salimi.png',
-    'do-kwon.png',
-    'justin-sun.png',
-    'brain-lee.png',
+    ['tekin-salimi.png', 'https://twitter.com/tekinsalimi?s=21'],
+    ['do-kwon.png', 'https://twitter.com/stablekwon?s=21'],
+    ['justin-sun.png', 'https://twitter.com/justinsuntron?s=21'],
+    // ['brain-lee.png', undefined],
   ];
 
   const logos = [
@@ -61,13 +63,13 @@ const BackedByCore = () => {
             {t('backed-by.title')}
           </WithAnimation>
           <Grid container justify="center">
-            {names.map(img => {
+            {names.map(([img, link], idx) => {
               return (
                 <WithAnimation
                   Component={Grid}
                   item
                   xs={6}
-                  md={3}
+                  md={4}
                   className={classes.imgWrap}
                   key={uid(img)}
                 >
@@ -76,7 +78,20 @@ const BackedByCore = () => {
                     src={`images/backed-by/${img}`}
                     alt=""
                   />
-                  <span className={classes.name}>{name(img)}</span>
+                  <span className={classes.name}>
+                    {name(img)}
+                    {link && (
+                      <Button
+                        className={classes.twitter}
+                        data-index={idx}
+                        component="a"
+                        href={link}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        variant="text"
+                      />
+                    )}
+                  </span>
                 </WithAnimation>
               );
             })}
