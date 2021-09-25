@@ -83,13 +83,18 @@ const BackedByCore = () => {
                     {link && (
                       <Button
                         className={classes.twitter}
-                        data-index={idx}
                         component="a"
                         href={link}
                         rel="noopener noreferrer"
                         target="_blank"
+                        data-index={idx}
                         variant="text"
-                      />
+                      >
+                        <img
+                          src={`images/backed-by/twitter/twitter${idx}.png`}
+                        />
+                        <img src="images/backed-by/twitter/twitter.svg" />
+                      </Button>
                     )}
                   </span>
                 </WithAnimation>

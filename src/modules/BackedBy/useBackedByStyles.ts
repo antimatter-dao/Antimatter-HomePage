@@ -96,24 +96,32 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     },
   },
   twitter: {
-    zIndex: 10,
-    background:
-      'url(/images/backed-by/twitter/twitter.svg) center center no-repeat',
     backgroundSize: 'contain',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
     padding: 0,
     marginLeft: 8,
     height: 16,
     width: 16,
     minWidth: 'unset',
+    '& img': {
+      position: 'absolute',
+      left: 0,
+      width: '100%',
+      height: 'auto',
+      opacity: 1,
+      '&:first-child': {
+        opacity: 0,
+      },
+
+      transition: '0.5s',
+    },
     '&:hover, &:active': {
-      '&[data-index="0"]': {
-        backgroundImage: 'url(/images/backed-by/twitter/twitter0.png)',
+      '& img:first-child': {
+        opacity: 1,
       },
-      '&[data-index="1"]': {
-        backgroundImage: 'url(/images/backed-by/twitter/twitter1.png)',
-      },
-      '&[data-index="2"]': {
-        backgroundImage: 'url(/images/backed-by/twitter/twitter2.png)',
+      '& img:last-child': {
+        opacity: 0,
       },
     },
   },
