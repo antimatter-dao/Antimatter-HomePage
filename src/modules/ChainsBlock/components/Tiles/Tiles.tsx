@@ -94,10 +94,12 @@ export const Tiles = () => {
               <Button
                 className={classNames(classes.tileBtn, classes.gradientRed)}
                 variant="contained"
-                role="button"
-                onClick={() => {}}
+                href="https://nonfungible.finance/#/spot_index"
+                role="link"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                Coming soon
+                Launch app
               </Button>
               <Button
                 onClick={() => scrollToHandle('NFT')}
