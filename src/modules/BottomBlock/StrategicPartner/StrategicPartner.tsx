@@ -27,6 +27,7 @@ export const StrategicPartner = () => {
     'pangolin.svg',
     'sushi.png',
     'near.svg',
+    ' terra.png',
   ];
 
   return (
