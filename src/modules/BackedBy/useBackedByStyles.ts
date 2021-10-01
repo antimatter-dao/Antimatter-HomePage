@@ -6,16 +6,17 @@ import { FONTS } from '../theme/mainTheme';
 export const useBackedByStyles = makeStyles<Theme>(theme => ({
   root: {
     position: 'relative',
-    zIndex: 3,
+    zIndex: 2,
     padding: theme.spacing(8, 0),
     background: '#ffffff url(./images/ellipse_blue.svg) no-repeat center -350%',
     backgroundSize: '500% 90%',
     borderRadius: '30px',
-    minHeight: '100vh',
+    // minHeight: '100vh',
     maxWidth: 1440,
     paddingBottom: 120 + PARALLAX_MARGIN,
     [theme.breakpoints.up('lg')]: {
-      paddingBottom: 120,
+      // paddingBottom: 120,
+      paddingBottom: 200,
       paddingTop: 100,
       minHeight: 'unset',
       marginLeft: 'auto',
