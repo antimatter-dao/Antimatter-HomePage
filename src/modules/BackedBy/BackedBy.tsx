@@ -30,9 +30,9 @@ export const BackedBy = () => {
       {match ? (
         <BackedByCore />
       ) : (
-        <WithScrollFreezing>
-          <BackedByCore />
-        </WithScrollFreezing>
+        // <WithScrollFreezing>
+        <BackedByCore />
+        // </WithScrollFreezing>
       )}
     </>
   );
@@ -62,7 +62,7 @@ const BackedByCore = () => {
           <WithAnimation className={classes.title} Component={Typography}>
             {t('backed-by.title')}
           </WithAnimation>
-          <Grid container justify="center">
+          {/* <Grid container justify="center">
             {names.map(([img, link], idx) => {
               return (
                 <WithAnimation
@@ -100,7 +100,7 @@ const BackedByCore = () => {
                 </WithAnimation>
               );
             })}
-          </Grid>
+          </Grid> */}
           <Grid container justify="center" style={{ marginTop: 60 }}>
             {logos.map(img => {
               return (
