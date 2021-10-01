@@ -21,15 +21,15 @@ export const Layout = ({ locale, children }: ILayoutProps) => {
 
   const isServerSide = isServer();
 
-  if (isServerSide) {
-    intl
-      .init({
-        currentLocale: locale,
-        locales,
-        fallbackLocale: Locale.en,
-      })
-      .catch(err => console.error(err));
-  }
+  // if (isServerSide) {
+  //   intl
+  //     .init({
+  //       currentLocale: locale,
+  //       locales,
+  //       fallbackLocale: Locale.en,
+  //     })
+  //     .catch(err => console.error(err));
+  // }
 
   useEffect(() => {
     // Remove the server-side injected CSS.

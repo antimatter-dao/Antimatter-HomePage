@@ -4,12 +4,12 @@ import { FONTS } from '../../../theme/mainTheme';
 export const useTilesStyles = makeStyles<Theme>(theme => ({
   root: {
     position: 'relative',
-    transform: 'translateY(-172px)',
+    transform: 'translateY(-328px)',
     [theme.breakpoints.up('md')]: {
-      transform: 'translateY(-239px)',
       maxWidth: '100%',
     },
     [theme.breakpoints.up('lg')]: {
+      transform: 'translateY(-239px)',
       maxWidth: '90%',
     },
     margin: '0 auto',
@@ -29,6 +29,9 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     },
     '&:nth-child(2)': {
       transitionDelay: '0.3s',
+    },
+    '&:nth-child(3)': {
+      transitionDelay: '0.6s',
     },
   },
   tileItemContent: {
@@ -52,41 +55,36 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     '&:hover $tileContent': {
       opacity: 1,
     },
-    '&:hover $tileTitle': {
+    '&:hover $tileTop': {
       marginBottom: theme.spacing(1),
       [theme.breakpoints.up('md')]: {
         marginBottom: theme.spacing(2.5),
       },
     },
-    [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(4.5, 8),
+    [theme.breakpoints.up('md')]: { padding: '24px 36px' },
+    [theme.breakpoints.up('lg')]: {
+      padding: '36px 48px',
       minHeight: 240,
       borderRadius: 80,
     },
   },
   tileTop: {
     fontFamily: FONTS.title,
-    whiteSpace: 'nowrap',
     display: 'flex',
     width: '100%',
-    flexWrap: 'nowrap',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     fontSize: 20,
-    [theme.breakpoints.up('md')]: {
-      fontSize: 30,
-      marginTop: 20,
-    },
-  },
-  tileContent: {
-    position: 'absolute',
-    opacity: 1,
-    transition: '0.5s',
-    bottom: 24,
+    whiteSpace: 'nowrap',
     [theme.breakpoints.up('lg')]: {
-      bottom: theme.spacing(4.5),
-      opacity: 0,
+      fontSize: 24,
+    },
+    [theme.breakpoints.up('lg')]: {
+      whiteSpace: 'pre-wrap',
+    },
+    [theme.breakpoints.up('xl')]: {
+      whiteSpace: 'nowrap',
     },
   },
   tileCount: {
@@ -108,6 +106,16 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
       opacity: 1,
     },
   },
+  tileContent: {
+    position: 'absolute',
+    opacity: 1,
+    transition: '0.5s',
+    bottom: 24,
+    [theme.breakpoints.up('lg')]: {
+      bottom: theme.spacing(4.5),
+      opacity: 0,
+    },
+  },
   tileBtn: {
     height: 52,
     width: 156,
@@ -115,9 +123,13 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     fontSize: 16,
     fontWeight: 500,
     whiteSpace: 'nowrap',
-    [theme.breakpoints.up('xl')]: {
-      height: 60,
+    [theme.breakpoints.up('md')]: {
+      height: 45,
       width: 240,
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: 40,
+      width: 140,
     },
   },
   tileMore: {
@@ -145,5 +157,9 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
   gradientGreen: {
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #9FEA38',
+  },
+  gradientPurple: {
+    background:
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #C88AF6',
   },
 }));

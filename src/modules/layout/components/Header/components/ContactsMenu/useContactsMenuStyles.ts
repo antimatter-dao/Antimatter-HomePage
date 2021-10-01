@@ -4,10 +4,13 @@ export const useContactsMenuStyles = makeStyles<Theme>(theme => ({
   mainLink: {
     '& svg': {
       alignSelf: 'center',
-    }
+    },
   },
   link: {
     whiteSpace: 'nowrap',
+    [theme.breakpoints.down('xs')]: {
+      paddingLeft: 15,
+    },
     '& svg': {
       marginRight: 16,
       height: 18,

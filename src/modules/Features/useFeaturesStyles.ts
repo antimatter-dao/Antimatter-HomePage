@@ -10,9 +10,9 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     marginTop: PARALLAX_MARGIN,
     paddingBottom: theme.spacing(14),
     pointerEvents: 'auto',
-    background: '#ffffff url(./images/ellipse.png) no-repeat center -15%',
-    backgroundSize: '100% 50%',
-    marginLeft: '0',
+    background: '#ffffff url(./images/ellipse.png) no-repeat center -40%',
+    backgroundSize: '100% 60%',
+    marginLeft: 0,
     marginRight: 0,
     marginBottom: 32,
     borderRadius: '0 0 30px 30px',
@@ -25,9 +25,8 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
       width: '100%',
       height: 60,
       borderRadius: '30px 30px 0 0',
-      background: '#ffffff url(./images/ellipse.png) no-repeat center 10% ',
+      background: '#ffffff url(./images/ellipse.png) no-repeat center 10%',
       backgroundSize: '100% auto',
-      [theme.breakpoints.up('lg')]: { top: -119, height: 120 },
     },
     [theme.breakpoints.up('lg')]: {
       paddingBottom: theme.spacing(23),
@@ -36,6 +35,8 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
       borderRadius: '0 0 80px 80px',
       '&::before': {
         borderRadius: '80px 80px 0 0',
+        top: -119,
+        height: 120,
       },
     },
     '& ::selection': {
@@ -55,12 +56,17 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
   },
   featuresCapsule: {
     padding: '9px 20px',
-    fontSize: 20,
+    fontSize: 12,
     borderRadius: 27,
     color: '#ffffff',
+    width: 184,
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.4) 123.86%), #9FEA38;',
     whiteSpace: 'nowrap',
+    [theme.breakpoints.up('md')]: {
+      fontSize: 20,
+      width: 'auto',
+    },
   },
   features: {
     fontSize: 24,

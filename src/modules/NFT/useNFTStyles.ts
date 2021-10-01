@@ -14,19 +14,9 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     paddingBottom: theme.spacing(10),
     pointerEvents: 'auto',
     borderRadius: '0 0 30px 30px',
-    marginBottom: 140,
+    marginBottom: 32,
     maxWidth: 1440,
     width: '100%',
-    '&::after': {
-      position: 'absolute',
-      bottom: -150,
-      content: `''`,
-      display: 'block',
-      height: 300,
-      width: '100%',
-      zIndex: -1,
-      backgroundColor: theme.palette.background.default,
-    },
     '&::before': {
       content: `''`,
       display: 'block',
@@ -36,22 +26,17 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
       background: 'rgba(35, 35, 35, 1)',
       height: 60,
       borderRadius: '30px 30px 0 0',
-      [theme.breakpoints.up('lg')]: {
+    },
+    [theme.breakpoints.up('lg')]: {
+      paddingBottom: theme.spacing(23),
+      borderRadius: '0 0 120px 120px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      '&::before': {
+        borderRadius: '120px 120px 0 0 ',
         top: -119,
         height: 120,
       },
-    },
-    [theme.breakpoints.up('lg')]: {
-      marginBottom: 100,
-      paddingBottom: theme.spacing(23),
-      borderRadius: '0 0 120px 120px',
-      '&::before': {
-        borderRadius: '120px 120px 0 0 ',
-      },
-    },
-    [theme.breakpoints.up('lg')]: {
-      marginLeft: 'auto',
-      marginRight: 'auto',
     },
   },
   wrap: {
@@ -65,12 +50,19 @@ export const useNFTStyles = makeStyles<Theme>(theme => ({
     },
   },
   NFTCapsule: {
-    padding: '9px 20px',
-    fontSize: 20,
+    padding: '9px 10px',
+    fontSize: 12,
     borderRadius: 27,
+    width: 184,
+    textAlign: 'center',
     color: '#ffffff',
+    whiteSpace: 'nowrap',
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.5) -48.61%, rgba(255, 255, 255, 0) 86.17%, rgba(255, 255, 255, 0.5) 219.44%), #FF8DB5;',
+    [theme.breakpoints.up('md')]: {
+      fontSize: 20,
+      width: 226,
+    },
   },
   features: {
     '& .features': {

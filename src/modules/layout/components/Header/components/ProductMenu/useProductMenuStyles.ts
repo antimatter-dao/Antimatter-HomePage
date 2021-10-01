@@ -8,6 +8,9 @@ export const useProductMenuStyles = makeStyles<Theme>(theme => ({
   },
   link: {
     whiteSpace: 'nowrap',
+    [theme.breakpoints.down('xs')]: {
+      paddingLeft: 15,
+    },
     '& svg': {
       marginRight: 16,
       height: 18,
