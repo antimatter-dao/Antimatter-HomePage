@@ -10,6 +10,7 @@ export const StrategicPartner = () => {
   const isMDDown = useIsMDDown();
 
   const logos = [
+    'arbitrum.png',
     'umbrella.svg',
     'elrond.svg',
     'impossible-finance.svg',
