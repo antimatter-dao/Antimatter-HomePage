@@ -11,6 +11,7 @@ export const StrategicPartner = () => {
 
   const logos = [
     'arbitrum.png',
+    'terra.png',
     'umbrella.svg',
     'elrond.svg',
     'impossible-finance.svg',
@@ -27,7 +28,6 @@ export const StrategicPartner = () => {
     'pangolin.svg',
     'sushi.png',
     'near.svg',
-    ' terra.png',
   ];
 
   return (
