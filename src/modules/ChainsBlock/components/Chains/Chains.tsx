@@ -58,7 +58,7 @@ export const Chains = () => {
         Multi-chain {isMDDown && <br />}ecosystem
         <WithAnimation className={classes.text} Component={Typography}>
           Antimatter products are available across multiple blockchains:
-          Ethereum, Binance Smart Chain, Arbitrum, Avalanche, Fantom, Near Terra
+          Ethereum, Binance Smart Chain, Arbitrum, Avalanche, Fantom, Near, Terra
           Blockchain and Solana etc.
         </WithAnimation>
       </WithAnimation>
