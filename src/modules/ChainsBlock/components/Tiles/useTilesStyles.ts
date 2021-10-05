@@ -46,8 +46,20 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     overflow: 'hidden',
     textDecoration: 'none',
     cursor: 'default',
-    '&:hover': {
-      background: '#ffffff url(./images/ellipse.png) no-repeat center 80%',
+    '&:hover.gradientGreen': {
+      background:
+        '#ffffff url(./images/ellipse_small_green.svg) no-repeat center 0',
+      backgroundSize: '150% 80%',
+    },
+    '&:hover.gradientRed': {
+      background:
+        '#ffffff url(./images/ellipse_small_red.svg) no-repeat center 0',
+      backgroundSize: '150% 80%',
+    },
+    '&:hover.gradientPurple': {
+      background:
+        '#ffffff url(./images/ellipse_small_purple.svg) no-repeat center 0',
+      backgroundSize: '150% 80%',
     },
     '&:hover $tileCount': {
       opacity: 0,

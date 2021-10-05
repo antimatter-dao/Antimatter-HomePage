@@ -45,13 +45,20 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
       height: '50%',
       background: '#F3BA2F',
       filter: 'blur(120px)',
-      opacity: 0.5,
+      opacity: 0.7,
       borderRadius: 120,
       transformOrigin: 'center center',
       animation: '$breathe 5s infinite alternate ease-in-out',
     },
     [theme.breakpoints.up('lg')]: {
       height: 550,
+    },
+    [theme.breakpoints.down('sm')]: {
+      '&::before': {
+        opacity: 0.5,
+        width: '100%',
+        filter: 'blur(40px)',
+      },
     },
   },
   blogText: {

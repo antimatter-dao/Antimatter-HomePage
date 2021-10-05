@@ -32,7 +32,7 @@ export const Tiles = () => {
         className={classes.tileItem}
         rootMargin="0%"
       >
-        <div className={classNames(classes.tileItemContent)}>
+        <div className={classNames(classes.tileItemContent, 'gradientGreen')}>
           <div className={classes.tileTop}>Perpetual Options</div>
           <div className={classNames(classes.tileCount, classes.gradientGreen)}>
             1
@@ -80,7 +80,7 @@ export const Tiles = () => {
         className={classes.tileItem}
         rootMargin="0%"
       >
-        <div className={classNames(classes.tileItemContent)}>
+        <div className={classNames(classes.tileItemContent, 'gradientRed')}>
           <div className={classes.tileTop}>Nonfungible Finance</div>
           <div className={classNames(classes.tileCount, classes.gradientRed)}>
             2
@@ -127,7 +127,7 @@ export const Tiles = () => {
         className={classes.tileItem}
         rootMargin="0%"
       >
-        <div className={classNames(classes.tileItemContent)}>
+        <div className={classNames(classes.tileItemContent, 'gradientPurple')}>
           <div className={classes.tileTop}>Antimatter {'\n'}Dao</div>
           <div
             className={classNames(classes.tileCount, classes.gradientPurple)}
