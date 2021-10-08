@@ -29,8 +29,8 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
   const menuItems = useMemo(
     () => [
       {
-        label: <>Perpetual Option Testnet</>,
-        href: 'https://test.antimatter.finance/#/option_trading',
+        label: <>Perpetual Option</>,
+        href: 'https://app.antimatter.finance/#/option_trading',
       },
       {
         label: <>Non-fungible finance</>,

@@ -4,7 +4,6 @@ import { useTilesStyles } from './useTilesStyles';
 import { Box, Button, Grid } from '@material-ui/core';
 import { WithAnimation } from '../../../WithAnimation';
 import classNames from 'classnames';
-import { t } from '../../../../i18n/intl';
 
 export const Tiles = () => {
   const classes = useTilesStyles();
@@ -51,7 +50,7 @@ export const Tiles = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                {t('common.launch-app')}
+                Launch App
               </Button>
               <Button
                 onClick={() => scrollToHandle('features')}
