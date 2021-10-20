@@ -45,7 +45,7 @@ const BackedByCore = () => {
     ['tekin-salimi.png', 'https://twitter.com/tekinsalimi?s=21'],
     ['do-kwon.png', 'https://twitter.com/stablekwon?s=21'],
     ['justin-sun.png', 'https://twitter.com/justinsuntron?s=21'],
-    // ['brain-lee.png', undefined],
+    ['brain-lee.png', 'https://twitter.com/brian741'],
   ];
 
   const logos = [
@@ -69,7 +69,7 @@ const BackedByCore = () => {
                   Component={Grid}
                   item
                   xs={6}
-                  md={4}
+                  md={3}
                   className={classes.imgWrap}
                   key={uid(img)}
                 >
