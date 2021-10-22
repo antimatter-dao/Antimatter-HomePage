@@ -3,6 +3,7 @@ import { MediumIcon } from '../../../common/components/Icons/MediumIcon';
 import { TwitterIcon } from '../../../common/components/Icons/TwitterIcon';
 import { TelegramIcon } from '../../../common/components/Icons/TelegramIcon';
 import { GithubIcon } from '../../../common/components/Icons/GithubIcon';
+import { ForumIcon } from '../../../common/components/Icons/ForumIcon';
 import { Box, IconButton } from '@material-ui/core';
 import { uid } from 'react-uid';
 import { useSocialLinksStyles } from './useSocialLinksStyles';
@@ -35,6 +36,11 @@ export const SocialLinks = ({ className }: ISocialLinks) => {
         title: 'Telegram',
         icon: TelegramIcon,
         href: 'https://t.me/antimatterchat',
+      },
+      {
+        title: 'Forum',
+        icon: ForumIcon,
+        href: 'https://forum.antimatter.finance',
       },
     ],
     [],

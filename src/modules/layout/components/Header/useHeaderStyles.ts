@@ -177,37 +177,40 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
         animationTimingFunction: 'linear',
         animationFillMode: 'both',
         '&:nth-child(1)': {
-          animationDelay: '0.2s',
+          animationDelay: '0.05s',
         },
         '&:nth-child(2)': {
-          animationDelay: '0.3s',
+          animationDelay: '0.1s',
         },
         '&:nth-child(3)': {
-          animationDelay: '0.4s',
+          animationDelay: '0.15s',
         },
         '&:nth-child(4)': {
-          animationDelay: '0.5s',
+          animationDelay: '0.2s',
         },
         '&:nth-child(5)': {
-          animationDelay: '0.6s',
+          animationDelay: '0.25s',
         },
         '&:nth-child(6)': {
-          animationDelay: '0.7s',
+          animationDelay: '0.3s',
         },
         '&:nth-child(7)': {
-          animationDelay: '0.8s',
+          animationDelay: '0.35s',
         },
         '&:nth-child(8)': {
-          animationDelay: '0.9s',
+          animationDelay: '0.4s',
         },
         '&:nth-child(9)': {
-          animationDelay: '1s',
+          animationDelay: '0.45s',
         },
         '&:nth-child(10)': {
-          animationDelay: '1.1s',
+          animationDelay: '0.5s',
         },
         '&:nth-child(11)': {
-          animationDelay: '1.2s',
+          animationDelay: '0.55s',
+        },
+        '&:nth-child(12)': {
+          animationDelay: '0.6s',
         },
       },
     },

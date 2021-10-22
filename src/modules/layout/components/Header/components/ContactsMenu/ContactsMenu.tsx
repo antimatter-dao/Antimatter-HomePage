@@ -9,6 +9,7 @@ import { MediumIcon } from '../../../../../common/components/Icons/MediumIcon';
 import { TwitterIcon } from '../../../../../common/components/Icons/TwitterIcon';
 import { TelegramIcon } from '../../../../../common/components/Icons/TelegramIcon';
 import { GithubIcon } from '../../../../../common/components/Icons/GithubIcon';
+import { ForumIcon } from '../../../../../common/components/Icons/ForumIcon';
 
 interface ContactsMenuProps {
   linkClass?: any;
@@ -67,6 +68,15 @@ export const ContactsMenu = ({ linkClass }: ContactsMenuProps) => {
           </>
         ),
         href: 'https://github.com/antimatter-finance/',
+      },
+      {
+        label: (
+          <>
+            <ForumIcon />
+            Forum
+          </>
+        ),
+        href: 'https://forum.antimatter.finance',
       },
     ],
     [],
