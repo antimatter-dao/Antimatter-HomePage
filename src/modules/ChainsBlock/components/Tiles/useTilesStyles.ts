@@ -49,18 +49,19 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     '&:hover.gradientGreen': {
       background:
         '#ffffff url(./images/ellipse_small_green.svg) no-repeat center 0',
-      backgroundSize: '150% 80%',
+      backgroundSize: '150% 150%',
     },
     '&:hover.gradientRed': {
       background:
         '#ffffff url(./images/ellipse_small_red.svg) no-repeat center 0',
-      backgroundSize: '150% 80%',
+      backgroundSize: '150% 150%',
     },
     '&:hover.gradientPurple': {
       background:
         '#ffffff url(./images/ellipse_small_purple.svg) no-repeat center 0',
-      backgroundSize: '150% 80%',
+      backgroundSize: '150% 170%',
     },
+
     '&:hover $tileCount': {
       opacity: 0,
     },
@@ -73,11 +74,28 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
         marginBottom: theme.spacing(2.5),
       },
     },
-    [theme.breakpoints.up('md')]: { padding: '24px 36px' },
+    [theme.breakpoints.up('md')]: {
+      padding: '24px 36px',
+    },
     [theme.breakpoints.up('lg')]: {
       padding: '36px 48px',
       minHeight: 240,
       borderRadius: 80,
+      '&:hover.gradientGreen': {
+        background:
+          '#ffffff url(./images/ellipse_small_green.svg) no-repeat center 0',
+        backgroundSize: '150% 80%',
+      },
+      '&:hover.gradientRed': {
+        background:
+          '#ffffff url(./images/ellipse_small_red.svg) no-repeat center 0',
+        backgroundSize: '150% 80%',
+      },
+      '&:hover.gradientPurple': {
+        background:
+          '#ffffff url(./images/ellipse_small_purple.svg) no-repeat center 0',
+        backgroundSize: '150% 80%',
+      },
     },
   },
   tileTop: {

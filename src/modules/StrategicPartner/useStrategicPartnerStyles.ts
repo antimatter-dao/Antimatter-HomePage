@@ -1,5 +1,6 @@
 import { makeStyles, Theme } from '@material-ui/core';
-import { FONTS } from '../../theme/mainTheme';
+import { FONTS } from '../theme/mainTheme';
+import { PARALLAX_MARGIN } from '../theme/const';
 
 export const useStrategicPartnerStyles = makeStyles<Theme>(theme => ({
   root: {
@@ -10,7 +11,10 @@ export const useStrategicPartnerStyles = makeStyles<Theme>(theme => ({
     borderRadius: '30px',
     maxWidth: 1440,
     overflow: 'hidden',
+    color: '#ffffff',
+    minHeight: '100vh',
     [theme.breakpoints.up('lg')]: {
+      margin: '-60px auto 0',
       paddingTop: 100,
       minHeight: 'unset',
       marginLeft: 'auto',

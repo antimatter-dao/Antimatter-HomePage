@@ -1,20 +1,16 @@
 import { makeStyles, Theme } from '@material-ui/core';
 import { FONTS, PALETTE } from '../theme/mainTheme';
-import { PARALLAX_MARGIN } from '../theme/const';
 
 export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
   root: {
     position: 'relative',
     color: PALETTE.text.light,
-    margin: `${-PARALLAX_MARGIN}px 0 0`,
-    borderRadius: '30px 30px 0 0',
+    margin: '0 auto',
     pointerEvents: 'auto',
     maxWidth: 1440,
     backgroundColor: theme.palette.background.default,
     zIndex: 2,
     [theme.breakpoints.up('lg')]: {
-      margin: '-60px auto 0',
-      borderRadius: '120px 120px 0 0',
       width: '100%',
     },
     '& ::selection': {
@@ -34,18 +30,17 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
     minHeight: 318,
     height: '100%',
     position: 'relative',
-    overflow: 'hidden',
     '&::before': {
       content: `''`,
-      top: '10%',
+      top: '20%',
       left: '50%',
       transform: 'translateX(-50%)',
       position: 'absolute',
       width: '50%',
-      height: '50%',
+      height: '20%',
       background: '#F3BA2F',
-      filter: 'blur(120px)',
-      opacity: 0.7,
+      filter: 'blur(80px)',
+      opacity: 0.9,
       borderRadius: 120,
       transformOrigin: 'center center',
       animation: '$breathe 5s infinite alternate ease-in-out',
@@ -93,5 +88,77 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
         padding: '27px 94px',
       },
     },
+  },
+  posts: {
+    maxWidth: 1440,
+    margin: '80px auto 100px',
+    maxHeight: 'unset',
+    width: '100%',
+    padding: '0 30px',
+    [theme.breakpoints.up('md')]: {
+      columnCount: 2,
+      columnGap: 40,
+      maxHeight: 1305,
+      marginBottom: 0,
+      padding: '0 40px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      padding: '0 120px',
+      maxHeight: 1450,
+      padding: '0 60px',
+    },
+  },
+  post: {
+    marginBottom: 20,
+    minHeight: 0,
+    color: '#000000',
+    background: '#FFFFFF',
+    borderRadius: '20px',
+    width: '100%',
+    height: 'min-content',
+    '& img': {
+      width: '100%',
+      objectFit: 'contain',
+      borderRadius: '20px',
+    },
+    [theme.breakpoints.up('md')]: {
+      marginBottom: 40,
+      borderRadius: '30px',
+      '& img': {
+        borderRadius: '30px',
+      },
+    },
+    [theme.breakpoints.up('lg')]: {
+      marginBottom: 40,
+      borderRadius: '80px',
+      '& img': {
+        borderRadius: '80px',
+      },
+    },
+  },
+  btn: {
+    marginTop: 16,
+    padding: '12px 24px',
+    fontSize: 18,
+    width: 'max-content',
+    '& svg': {
+      marginLeft: 9,
+    },
+  },
+  green: {
+    background:
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #9FEA38;',
+  },
+  purple: {
+    background:
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #C88AF6',
+  },
+  yellow: {
+    background:
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #F3BA2F',
+  },
+  red: {
+    background:
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) -48.61%, rgba(255, 255, 255, 0) 86.17%, rgba(255, 255, 255, 0.5) 219.44%), #FF8DB5',
   },
 }));

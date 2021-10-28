@@ -10,9 +10,9 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     padding: theme.spacing(8, 0),
     background: '#ffffff url(./images/ellipse_blue.svg) no-repeat center -350%',
     backgroundSize: '500% 90%',
-    borderRadius: '30px',
-    // minHeight: '100vh',
+    minHeight: '100vh',
     maxWidth: 1440,
+    borderRadius: '30px',
     paddingBottom: 120 + PARALLAX_MARGIN,
     [theme.breakpoints.up('lg')]: {
       // paddingBottom: 120,

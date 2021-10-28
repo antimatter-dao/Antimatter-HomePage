@@ -34,7 +34,7 @@ export const useWithScrollFreezingStyles = makeStyles<Theme>(theme => ({
     zIndex: 1,
   },
   fixedWithEffect: {
-    filter: 'grayscale(0.5)',
+    filter: 'grayscale(0.3)',
     pointerEvents: 'none',
     '& *': {
       pointerEvents: 'none !important',

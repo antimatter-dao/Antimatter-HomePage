@@ -30,9 +30,9 @@ export const BackedBy = () => {
       {match ? (
         <BackedByCore />
       ) : (
-        // <WithScrollFreezing>
-        <BackedByCore />
-        // </WithScrollFreezing>
+        <WithScrollFreezing>
+          <BackedByCore />
+        </WithScrollFreezing>
       )}
     </>
   );

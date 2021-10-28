@@ -2,8 +2,8 @@ import React from 'react';
 import { useStrategicPartnerStyles } from './useStrategicPartnerStyles';
 import { Container, Grid, Typography } from '@material-ui/core';
 import { uid } from 'react-uid';
-import { WithAnimation } from '../../WithAnimation';
-import { useIsMDDown } from '../../theme';
+import { WithAnimation } from '../WithAnimation';
+import { useIsMDDown } from '../theme';
 
 export const StrategicPartner = () => {
   const classes = useStrategicPartnerStyles();

@@ -6,6 +6,7 @@ import { NFT } from '../src/modules/NFT';
 import { DAO } from '../src/modules/DAO';
 import { BackedBy } from '../src/modules/BackedBy';
 import { BottomBlock } from '../src/modules/BottomBlock/BottomBlock';
+import { StrategicPartner } from '../src/modules/StrategicPartner';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <NFT />
       <DAO />
       <BackedBy />
+      <StrategicPartner />
       <BottomBlock />
     </Layout>
   );
