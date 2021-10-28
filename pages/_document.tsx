@@ -82,7 +82,7 @@ class MyDocument extends Document<Props> {
           <link rel="apple-touch-icon" href="/images/logo.png" />
           {/* <title>{t('common.site-title')}</title> */}
         </Head>
-        <body>
+        <body style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
           <Main />
           <NextScript />
         </body>

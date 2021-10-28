@@ -59,53 +59,68 @@ export const BottomBlock = () => {
     <div className={classes.root} id="bottom-block">
       <div className={classes.posts}>
         {posts.map(post => (
-          <div className={classes.post}>
-            <img src={`/images/posts/${post.imgUrl}`} alt=""></img>
-            <Box
-              padding={isDownMD ? '25px 25px 40px' : '40px 48px 59px'}
-              gridGap="8px"
-              display="grid"
-            >
-              <Box fontWeight={700} fontSize="24px">
-                {post.title}
-              </Box>
-              <Box display="flex" gridGap="12px">
-                <Box
-                  style={{
-                    borderRadius: 30,
-                    padding: '4px 12px',
-                    border: '1px solid rgba(0, 0, 0, 0.1)',
-                  }}
-                >
-                  {post.date}
-                </Box>
-                <img
-                  src={`/images/posts/${post.postBy}`}
-                  style={{ width: 'auto', flexGrow: 0 }}
-                />
-              </Box>
-              <p style={{ fontSize: 16, color: 'rgb(35,35,35)', margin: 0 }}>
-                {post.synopsis}
-              </p>
-              <Button
-                className={classNames(classes.btn, classes[post.buttonColor])}
-                variant="contained"
-                href={post.url}
-                role="link"
-                rel="noopener noreferrer"
-                target="_blank"
+          <WithAnimation>
+            <div className={classes.post}>
+              <img src={`/images/posts/${post.imgUrl}`} alt=""></img>
+              <Box
+                padding={isDownMD ? '25px 25px 40px' : '40px 48px 59px'}
+                gridGap="8px"
+                display="grid"
               >
-                Read more
-                <svg width="12" height="13" viewBox="0 0 12 13">
-                  <path
-                    d="M11.1966 11.2888V1.49804M11.1966 1.49804H1.40589M11.1966 1.49804L0.589996 12.1046"
-                    stroke="#232323"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </Button>
-            </Box>
-          </div>
+                <WithAnimation>
+                  <Box fontWeight={700} fontSize="24px">
+                    {post.title}
+                  </Box>
+                </WithAnimation>
+                <WithAnimation>
+                  <Box display="flex" gridGap="12px">
+                    <Box
+                      style={{
+                        borderRadius: 30,
+                        padding: '4px 12px',
+                        border: '1px solid rgba(0, 0, 0, 0.1)',
+                      }}
+                    >
+                      {post.date}
+                    </Box>
+                    <img
+                      src={`/images/posts/${post.postBy}`}
+                      style={{ width: 'auto', flexGrow: 0 }}
+                    />
+                  </Box>
+                </WithAnimation>
+                <WithAnimation>
+                  <p
+                    style={{ fontSize: 16, color: 'rgb(35,35,35)', margin: 0 }}
+                  >
+                    {post.synopsis}
+                  </p>
+                </WithAnimation>
+                <WithAnimation>
+                  <Button
+                    className={classNames(
+                      classes.btn,
+                      classes[post.buttonColor],
+                    )}
+                    variant="contained"
+                    href={post.url}
+                    role="link"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Read more
+                    <svg width="12" height="13" viewBox="0 0 12 13">
+                      <path
+                        d="M11.1966 11.2888V1.49804M11.1966 1.49804H1.40589M11.1966 1.49804L0.589996 12.1046"
+                        stroke="#232323"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                  </Button>
+                </WithAnimation>
+              </Box>
+            </div>
+          </WithAnimation>
         ))}
       </div>
       <div className={classes.blog}>

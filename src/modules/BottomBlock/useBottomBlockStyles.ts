@@ -103,9 +103,8 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
       padding: '0 40px',
     },
     [theme.breakpoints.up('lg')]: {
-      padding: '0 120px',
-      maxHeight: 1450,
       padding: '0 60px',
+      maxHeight: 1450,
     },
   },
   post: {
@@ -133,6 +132,9 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
       borderRadius: '80px',
       '& img': {
         borderRadius: '80px',
+      },
+      '&:nth-child(2n)': {
+        transitionDelay: 0.5,
       },
     },
   },
