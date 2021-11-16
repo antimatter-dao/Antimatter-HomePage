@@ -37,8 +37,8 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
         href: 'https://nonfungible.finance/#/',
       },
       {
-        label: <>Antimatter Dao (Coming Soon)</>,
-        href: '',
+        label: <>Antimatter Dao</>,
+        href: 'https://dao.antimatter.finance/#/stake',
       },
     ],
     [],

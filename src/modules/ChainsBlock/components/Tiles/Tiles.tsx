@@ -142,8 +142,10 @@ export const Tiles = () => {
               <Button
                 className={classNames(classes.tileBtn, classes.gradientPurple)}
                 variant="contained"
-                role="button"
-                onClick={() => {}}
+                href="https://dao.antimatter.finance/#/stake"
+                role="link"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Launch App
               </Button>
