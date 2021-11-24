@@ -94,7 +94,7 @@ export const DualInvest = () => {
                     </li>
                     <li>
                       {
-                        'Settlement price > Strike price: Option yield + Fixed APY'
+                        'Settlement price >= Strike price: Option yield + Fixed APY'
                       }
                     </li>
                   </ol>
@@ -106,7 +106,7 @@ export const DualInvest = () => {
                   <ol>
                     <li>
                       {
-                        'Settlement price < Strike price: Option yield + Fixed APY'
+                        'Settlement price <= Strike price: Option yield + Fixed APY'
                       }
                     </li>
                     <li>
