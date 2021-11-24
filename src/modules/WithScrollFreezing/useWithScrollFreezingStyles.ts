@@ -31,6 +31,9 @@ export const useWithScrollFreezingStyles = makeStyles<Theme>(theme => ({
     left: 0,
     right: 0,
     bottom: 233,
+    [theme.breakpoints.down('md')]: {
+      bottom: 60,
+    },
     zIndex: 1,
   },
   fixedWithEffect: {

@@ -22,7 +22,7 @@ const posts = [
     postBy: 'marketWatch.png',
     title:
       'AntiMatter Perpetrual Options Launches on ETH, Arbitrum, AVAX, Terra, BSC, & More',
-    buttonColor: 'purple',
+    buttonColor: 'yellow',
     date: 'Oct 8, 2021',
     synopsis:
       'AntiMatter, a next generation decentralized financial (DeFi) derivative platform, has announced that its Mainnet launch on 8 October on multiple blockchains including ETH, Arbitrum (ETH L2), AVAX, BSC with more to come including Terra (LUNA) and NEAR (via Aurora)…',
@@ -34,7 +34,7 @@ const posts = [
     date: 'Oct 8, 2021',
     title:
       'AntiMatter Perpetrual Options Launches on ETH, Arbitrum, AVAX, Terra, BSC, & More',
-    buttonColor: 'yellow',
+    buttonColor: 'blue',
     synopsis:
       'AntiMatter, a next generation decentralized financial (DeFi) derivative platform, has announced that its Mainnet launch on 8 October on multiple blockchains including ETH, Arbitrum (ETH L2), AVAX, BSC with more to come including Terra (LUNA) and NEAR (via Aurora)…',
   },
@@ -59,7 +59,7 @@ export const BottomBlock = () => {
     <div className={classes.root} id="bottom-block">
       <div className={classes.posts}>
         {posts.map(post => (
-          <WithAnimation>
+          <WithAnimation key={post.imgUrl}>
             <div className={classes.post}>
               <img src={`/images/posts/${post.imgUrl}`} alt=""></img>
               <Box
@@ -113,7 +113,7 @@ export const BottomBlock = () => {
                       <path
                         d="M11.1966 11.2888V1.49804M11.1966 1.49804H1.40589M11.1966 1.49804L0.589996 12.1046"
                         stroke="#232323"
-                        stroke-width="1.5"
+                        strokeWidth="1.5"
                       />
                     </svg>
                   </Button>

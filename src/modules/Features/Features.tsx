@@ -15,11 +15,7 @@ export const Features = () => {
   const isMDDown = useIsMDDown();
 
   const FeaturesCapsule = useCallback(
-    () => (
-      <div className={classes.featuresCapsule}>
-        Antimatter Perpetual Options
-      </div>
-    ),
+    () => <div className={classes.featuresCapsule}>BULL & BEAR Option</div>,
     [],
   );
 

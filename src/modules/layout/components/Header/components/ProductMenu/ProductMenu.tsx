@@ -29,7 +29,7 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
   const menuItems = useMemo(
     () => [
       {
-        label: <>Perpetual Option</>,
+        label: <>BULL & BEAR</>,
         href: 'https://app.antimatter.finance/#/option_trading',
       },
       {
@@ -54,7 +54,7 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
         onClick={handleClick}
         className={classNames(linkClass, classes.mainLink)}
       >
-        Products
+        Labs
         <AngleDownIcon className={classes.icon} />
       </Link>
       <Menu

@@ -6,10 +6,9 @@ export const useDAOStyles = makeStyles<Theme>(theme => ({
   root: {
     zIndex: 3,
     position: 'relative',
-    background: '#ffffff url(./images/ellipse_pink.png) no-repeat center -90%',
+    background: '#ffffff url(./images/ellipse_blue.png) no-repeat center -90%',
     backgroundSize: '150% 80%',
     color: '#000000',
-    // marginTop: PARALLAX_MARGIN,
     minHeight: '100vh',
     marginLeft: 0,
     marginRight: 0,
@@ -25,7 +24,7 @@ export const useDAOStyles = makeStyles<Theme>(theme => ({
       position: 'absolute',
       top: -59,
       width: '100%',
-      background: '#ffffff url(./images/ellipse_pink.png) no-repeat center 10%',
+      background: '#ffffff url(./images/ellipse_blue.png) no-repeat center 10%',
       backgroundSize: '150% auto',
       height: 60,
       borderRadius: '30px 30px 0 0',
@@ -61,7 +60,7 @@ export const useDAOStyles = makeStyles<Theme>(theme => ({
     width: 184,
     textAlign: 'center',
     background:
-      ' linear-gradient(180deg, rgba(255, 255, 255, 0.5) -48.61%, rgba(255, 255, 255, 0) 86.17%, rgba(255, 255, 255, 0.5) 219.44%), #C07AF5',
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) -48.61%, rgba(255, 255, 255, 0) 86.17%, rgba(255, 255, 255, 0.5) 219.44%), #44D8BF',
     [theme.breakpoints.up('md')]: {
       fontSize: 20,
       width: 226,
@@ -88,7 +87,7 @@ export const useDAOStyles = makeStyles<Theme>(theme => ({
         content: `''`,
         height: 6,
         width: 6,
-        backgroundColor: '#C37FF5',
+        backgroundColor: '#63B6E4',
         borderRadius: '50%',
         marginRight: 20,
         flexShrink: 0,
@@ -102,51 +101,10 @@ export const useDAOStyles = makeStyles<Theme>(theme => ({
       },
     },
   },
-  screenWrap: {
-    position: 'relative',
-    '&::before': {
-      display: 'block',
-      content: `''`,
-      paddingTop: '100%',
-      [theme.breakpoints.down('md')]: {
-        paddingTop: '50%',
-      },
-      [theme.breakpoints.down('sm')]: {
-        paddingTop: '80%',
-      },
+  image: {
+    filter: 'drop-shadow(0px 1px 25px rgba(11, 16, 61, 0.1))',
+    [theme.breakpoints.up('md')]: {
+      top: 120,
     },
   },
-  screen: {
-    position: 'absolute',
-    left: 50,
-    top: 100,
-    objectFit: 'contain',
-    borderRadius: 20,
-    backfaceVisibility: 'hidden',
-    transformOrigin: '100% 0',
-    transition: 'transform 0.5s 0.3s, opacity 0.5s 0.3s',
-    '.client-side &': {
-      opacity: 0,
-      transform: 'translateX(40px)',
-    },
-    '$screenInView &': {
-      opacity: 1,
-      transform: 'translateX(0)',
-    },
-    [theme.breakpoints.down('md')]: {
-      transform: 'unset',
-      width: '100%',
-      height: '100%',
-      left: 50,
-      top: 50,
-    },
-    [theme.breakpoints.down('sm')]: {
-      width: '130%',
-      height: '130%',
-      marginRight: -16,
-      top: -55,
-      left: -40,
-    },
-  },
-  screenInView: {},
 }));

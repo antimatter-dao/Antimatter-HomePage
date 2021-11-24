@@ -66,25 +66,15 @@ function Core({ isUpLg }: { isUpLg: boolean }) {
                 btnUrl=""
                 smallTitleStyle
               >
-                {isUpLg ? (
-                  <Features />
-                ) : (
-                  <WithAnimation
-                    className={classes.screenWrap}
-                    defaultAnimation={false}
-                    addClassInView={classes.screenInView}
-                  >
-                    <img
-                      className={classes.screen}
-                      src={'images/DAO/DAO.png'}
-                      alt=""
-                    />
-                  </WithAnimation>
-                )}
+                <Features />
               </SideContent>
             </Grid>
             <Grid item xs={12} lg={6}>
-              {isUpLg ? (
+              <SideScreen
+                screenPath="images/DAO/screen.png"
+                classname={classes.image}
+              />
+              {/* {isUpLg ? (
                 <WithAnimation
                   className={classes.screenWrap}
                   defaultAnimation={false}
@@ -98,7 +88,7 @@ function Core({ isUpLg }: { isUpLg: boolean }) {
                 </WithAnimation>
               ) : (
                 <Features />
-              )}
+              )} */}
             </Grid>
           </Grid>
         </Container>

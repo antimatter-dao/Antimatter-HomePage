@@ -30,7 +30,8 @@
 
 @font-face {
   font-family: 'Monument Extended Regular';
-  src: local('Monument Extended Regular'), local('Monument-Extended-Regular'),
+  src: local('Monument Extended Ultralight'),
+    local('Monument-Extended-Ultralight'),
     url('MonumentExtended-Ultralight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;

@@ -60,6 +60,9 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
     borderRadius: 27,
     color: '#ffffff',
     width: 184,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.4) 123.86%), #9FEA38;',
     whiteSpace: 'nowrap',

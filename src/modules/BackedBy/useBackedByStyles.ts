@@ -80,6 +80,7 @@ export const useBackedByStyles = makeStyles<Theme>(theme => ({
     display: 'block',
     marginTop: 10,
     textAlign: 'center',
+    whiteSpace: 'nowrap',
   },
   filler: {
     position: 'relative',
