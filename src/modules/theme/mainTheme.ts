@@ -94,6 +94,10 @@ export const mainTheme = createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       '@global': {
+        body: {
+          maxWidth: '100vw',
+          overflowX: 'hidden',
+        },
         a: {
           color: 'inherit',
           fontSize: 'inherit',
@@ -111,7 +115,12 @@ export const mainTheme = createMuiTheme({
         },
       },
     },
-
+    MuiPopover: {
+      root: {
+        maxWidth: '100vw',
+        overflow: 'hidden',
+      },
+    },
     MuiContainer: {
       root: {
         maxWidth: 1440,

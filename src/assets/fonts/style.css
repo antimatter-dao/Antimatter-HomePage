@@ -44,8 +44,3 @@
   font-weight: 700;
   font-style: normal;
 }
-
-html {
-  max-width: 100vw;
-  overflow-x: hidden;
-}

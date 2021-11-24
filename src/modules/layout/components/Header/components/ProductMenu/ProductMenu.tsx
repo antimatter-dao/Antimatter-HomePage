@@ -38,7 +38,7 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
       },
       {
         label: <>Antimatter Dao</>,
-        href: 'https://dao.antimatter.finance/#/stake',
+        href: 'https://dao.antimatter.finance/#/',
       },
     ],
     [],

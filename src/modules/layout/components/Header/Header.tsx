@@ -29,8 +29,8 @@ export const Header = () => {
         href: 'https://docs.antimatter.finance/',
       },
       {
-        label: t('header.governance'),
-        href: 'https://governance.antimatter.finance/',
+        label: 'DAO',
+        href: 'https://dao.antimatter.finance/#/',
       },
     ],
     [],

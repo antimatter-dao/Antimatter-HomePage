@@ -59,7 +59,7 @@ export const useHeaderStyles = makeStyles<Theme>(theme => ({
     justifyContent: 'flex-end',
     [theme.breakpoints.up('xl')]: {
       justifyContent: 'center',
-      gap: theme.spacing(0, 8),
+      gap: '40px',
     },
   },
 

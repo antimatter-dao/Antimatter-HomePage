@@ -32,9 +32,6 @@ export const Features = () => {
                   text={
                     'Antimatter enables traders to speculate on future prices of cryptocurrencies by utilizing on-chain financial derivatives, called perpetual options. These tokenized perpetual options can be created and traded on the Antimatter platform.'
                   }
-                  text2={
-                    'The indicator price is based on the ratio between call and put options and determines the price of the tokens. Differences between the indicator price and spot price create arbitrage opportunities for investors.'
-                  }
                   btnUrl="https://app.bounce.finance/"
                 />
                 {isMDDown && (
