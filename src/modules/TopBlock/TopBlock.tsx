@@ -1,10 +1,20 @@
 import React, { useCallback, useRef } from 'react';
 import { useTopBlockStyles } from './useTopBlockStyles';
-import { Container, Typography } from '@material-ui/core';
+import { Box, Button, Container, Typography } from '@material-ui/core';
 import { WithAnimation } from '../WithAnimation';
 import classNames from 'classnames';
-import { ChainsBlock } from '../ChainsBlock';
+// import { ChainsBlock } from '../ChainsBlock';
 import { WithScrollFreezing } from '../WithScrollFreezing';
+import { DualInvest } from './components/DualInvest';
+import { ProductsBlock } from './components/ProductsBlock';
+
+const chainList = [
+  'etherum.png',
+  'arbitrum.png',
+  'avalanche.png',
+  'fantom.png',
+  'binanceSmartChain.png',
+];
 
 export const TopBlock = () => {
   const classes = useTopBlockStyles();
@@ -37,24 +47,37 @@ export const TopBlock = () => {
         >
           <source src="/video/Black_Ball_Intro.mp4" type="video/mp4" />
         </video>
+        <div />
         <Container maxWidth={false} className={classes.container}>
           <WithAnimation
             className={classes.title}
             Component={Typography}
             variant="h2"
           >
-            The gateway for <span>DeFi</span> derivatives & financial{' '}
-            <span>NFT’</span>s
+            Earn <span>High Yield</span> on <span>Idle Assets</span>
           </WithAnimation>
           <WithAnimation className={classes.text} Component={Typography}>
-            Antimatter powers an ecosystem of on-chain financial products.
-            Create and trade tokenized perpetual options in a permissionless
-            environment across major blockchains.
+            Antimatter Dual Investment is a non-principal protected structured
+            product with enhanced yield, backed by options.
+          </WithAnimation>
+          <WithAnimation className={classes.text} Component={'div'}>
+            <Button className={classes.launchButton}>Coming Soon</Button>
           </WithAnimation>
         </Container>
+        <WithAnimation Component={'div'} className={classes.supportedChains}>
+          <Box alignContent="center" className={classes.supportedChainsGrid}>
+            {chainList.map(src => (
+              <WithAnimation key={src}>
+                <img src={`/images/supportedChains/${src}`} />
+              </WithAnimation>
+            ))}
+          </Box>
+        </WithAnimation>
       </div>
-      <ChainsBlock />
-      <div className={classes.filler} />
+      <DualInvest />
+      <ProductsBlock />
+      {/* <ChainsBlock /> */}
+      {/* <div className={classes.filler} /> */}
     </WithScrollFreezing>
   );
 };

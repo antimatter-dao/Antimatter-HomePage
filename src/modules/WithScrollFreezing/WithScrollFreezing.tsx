@@ -24,7 +24,7 @@ export const WithScrollFreezing = ({
   const [floatingWrapClass, setFloatingWrapClass] = useState(classes.notFixed);
 
   const wrapRef = useRef(null);
-  const floatingWrapRef = useRef(null);
+  const floatingWrapRef = useRef<null | HTMLDivElement>(null);
 
   const getWrapHeight = useCallback(() => {
     if (floatingWrapRef.current) {
@@ -63,6 +63,10 @@ export const WithScrollFreezing = ({
       }
     }
   }, [floatingWrapRef]);
+
+  useEffect(() => {
+    getWrapHeight();
+  }, [getWrapHeight, floatingWrapRef?.current?.offsetHeight]);
 
   useEffect(() => {
     getWrapHeight();

@@ -7,10 +7,12 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
     color: PALETTE.text.light,
     margin: '0 auto',
     pointerEvents: 'auto',
-    maxWidth: 1440,
+    maxWidth: '100vw',
+    overflowX: 'hidden',
     backgroundColor: theme.palette.background.default,
     zIndex: 2,
     [theme.breakpoints.up('lg')]: {
+      maxWidth: 1440,
       width: '100%',
     },
     '& ::selection': {
@@ -146,6 +148,10 @@ export const useBottomBlockStyles = makeStyles<Theme>(theme => ({
     '& svg': {
       marginLeft: 9,
     },
+  },
+  blue: {
+    background:
+      'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #44D8BF;',
   },
   green: {
     background:
