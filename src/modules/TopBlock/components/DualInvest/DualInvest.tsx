@@ -51,7 +51,7 @@ export const DualInvest = () => {
                   Step 02
                 </div>
                 <p>
-                  Each product has a strike price, delivery date and apy with
+                  Each product has a strike price, delivery date and APY with
                   features of cover option
                 </p>
               </Box>
@@ -89,12 +89,12 @@ export const DualInvest = () => {
                   <ol>
                     <li>
                       {
-                        'Settlement price < Strike price: Deposit currency + Fixed APY yield + Matter Tokens'
+                        'Settlement price < Strike price: Deposit currency + Fixed APY yield'
                       }
                     </li>
                     <li>
                       {
-                        'Settlement price > Strike price: Option yield + Fixed APY + Matter tokens'
+                        'Settlement price >= Strike price: Option yield + Fixed APY'
                       }
                     </li>
                   </ol>
@@ -106,12 +106,12 @@ export const DualInvest = () => {
                   <ol>
                     <li>
                       {
-                        'Settlement price < Strike price: Option yield + Fixed APY + Matter tokens'
+                        'Settlement price <= Strike price: Option yield + Fixed APY'
                       }
                     </li>
                     <li>
                       {
-                        'Settlement price > Strike price: Deposit currency + Fixed APY yield + Matter Tokens'
+                        'Settlement price > Strike price: Deposit currency + Fixed APY yield'
                       }
                     </li>
                   </ol>

@@ -134,7 +134,7 @@ export const Tiles = () => {
               <Button
                 className={classNames(classes.tileBtn, classes.gradientBlue)}
                 variant="contained"
-                href="https://dao.antimatter.finance/#/stake"
+                href="https://dao.antimatter.finance/#/"
                 role="link"
                 rel="noopener noreferrer"
                 target="_blank"

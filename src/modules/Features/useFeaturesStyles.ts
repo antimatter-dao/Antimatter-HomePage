@@ -32,9 +32,9 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
       paddingBottom: theme.spacing(23),
       marginLeft: 'auto',
       marginRight: 'auto',
-      borderRadius: '0 0 80px 80px',
+      borderRadius: '0 0 120px 120px',
       '&::before': {
-        borderRadius: '80px 80px 0 0',
+        borderRadius: '120px 120px 0 0',
         top: -119,
         height: 120,
       },

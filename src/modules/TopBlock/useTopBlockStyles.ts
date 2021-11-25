@@ -40,7 +40,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       width: '68%',
       height: 'auto',
       minWidth: 'unset',
-      transform: 'translate(13%, -55%)',
+      transform: 'translate(13%, -55%) scale(110%)',
       left: 'unset',
       right: 0,
     },
@@ -140,7 +140,8 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       padding: '0 16px',
     },
     [theme.breakpoints.up('lg')]: {
-      paddingBottom: '200px',
+      marginTop: 100,
+      paddingBottom: '60px',
       '& img': { padding: '0 ' },
     },
   },
