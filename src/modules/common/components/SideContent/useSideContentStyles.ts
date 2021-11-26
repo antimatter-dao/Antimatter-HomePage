@@ -48,7 +48,7 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
     [theme.breakpoints.up('lg')]: {
       fontSize: 44,
       lineHeight: '132%',
-      marginBottom: theme.spacing(4),
+      marginBottom: 72,
       width: 580,
     },
   },
@@ -65,7 +65,7 @@ export const useSideContentStyles = makeStyles<Theme>(theme => ({
     fontSize: 15,
     [theme.breakpoints.up('lg')]: {
       fontSize: 16,
-      marginBottom: theme.spacing(4),
+      marginBottom: 52,
     },
   },
 

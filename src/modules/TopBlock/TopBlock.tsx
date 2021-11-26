@@ -64,12 +64,20 @@ export const TopBlock = () => {
             <Button className={classes.launchButton}>Coming Soon</Button>
           </WithAnimation>
         </Container>
-        <WithAnimation Component={'div'} className={classes.supportedChains}>
+        <WithAnimation
+          Component={'div'}
+          className={classNames(
+            classes.supportedChains,
+            classes.supportedChainBefore,
+          )}
+          defaultAnimation={false}
+          addClassInView={classes.supportedChainAfter}
+        >
           <Box alignContent="center" className={classes.supportedChainsGrid}>
             {chainList.map(src => (
-              <WithAnimation key={src}>
+              <div key={src}>
                 <img src={`/images/supportedChains/${src}`} />
-              </WithAnimation>
+              </div>
             ))}
           </Box>
         </WithAnimation>

@@ -26,7 +26,7 @@ export const FONTS = {
     'sans-serif',
   ].join(','),
   title: 'Monument Extended Regular',
-  titleBold: 'Monument Extended Bold',
+  titleBold: 'Monument Extended Medium',
 };
 
 export const PALETTE = {

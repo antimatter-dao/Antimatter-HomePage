@@ -116,6 +116,14 @@ const BackedByCore = () => {
                     className={classes.img}
                     src={`images/backed-by/${img}`}
                     alt=""
+                    style={
+                      img.includes('ngc')
+                        ? {
+                            transformOrigin: '50% 50%',
+                            transform: 'scale(0.9)',
+                          }
+                        : undefined
+                    }
                   />
                 </WithAnimation>
               );

@@ -11,7 +11,6 @@ import { SideScreen } from '../common/components/SideScreen';
 import { SideContent } from '../common/components/SideContent';
 import { WithScrollFreezing } from '../WithScrollFreezing';
 import { useCallback } from 'react';
-import { WithAnimation } from '../WithAnimation';
 
 export const DAO = () => {
   const theme = useTheme();
@@ -66,29 +65,25 @@ function Core({ isUpLg }: { isUpLg: boolean }) {
                 btnUrl=""
                 smallTitleStyle
               >
-                <Features />
+                {isUpLg ? (
+                  <Features />
+                ) : (
+                  <SideScreen
+                    screenPath="images/DAO/screen.png"
+                    classname={classes.image}
+                  />
+                )}
               </SideContent>
             </Grid>
             <Grid item xs={12} lg={6}>
-              <SideScreen
-                screenPath="images/DAO/screen.png"
-                classname={classes.image}
-              />
-              {/* {isUpLg ? (
-                <WithAnimation
-                  className={classes.screenWrap}
-                  defaultAnimation={false}
-                  addClassInView={classes.screenInView}
-                >
-                  <img
-                    className={classes.screen}
-                    src={'images/DAO/DAO.png'}
-                    alt=""
-                  />
-                </WithAnimation>
+              {isUpLg ? (
+                <SideScreen
+                  screenPath="images/DAO/screen.png"
+                  classname={classes.image}
+                />
               ) : (
                 <Features />
-              )} */}
+              )}
             </Grid>
           </Grid>
         </Container>

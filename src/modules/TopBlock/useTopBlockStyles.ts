@@ -129,7 +129,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
   supportedChains: {
     width: '100%',
     paddingBottom: '60px',
-
+    transitionDuration: '0.5s',
     '& img': {
       margin: '0 auto',
       maxHeight: '30px',
@@ -140,7 +140,6 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       padding: '0 16px',
     },
     [theme.breakpoints.up('lg')]: {
-      marginTop: 100,
       paddingBottom: '60px',
       '& img': { padding: '0 ' },
     },
@@ -151,14 +150,23 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     gridTemplateColumns: '1fr 1fr',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    // gap: 30,
     '& > div': { maxWidth: '48%', minHeight: '60px' },
     [theme.breakpoints.up('md')]: {
       '& > div': { maxWidth: 'unset', minHeight: 'unset' },
       display: 'grid',
-      padding: 40,
+      padding: '40px 40px',
       gap: 60,
       gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
     },
+  },
+  supportedChainBefore: {
+    transformOrigin: '0 0',
+    opacity: 0,
+    transform: 'scale(1, 0) rotateZ(3deg)',
+  },
+  supportedChainAfter: {
+    transformOrigin: '0 0',
+    opacity: 1,
+    transform: 'scale(1, 1) rotateZ(0)',
   },
 }));

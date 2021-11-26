@@ -11,7 +11,7 @@ export const useDualInvestStyles = makeStyles<Theme>(theme => ({
     pointerEvents: 'auto',
     background: '#232323',
     minHeight: 120,
-    maxWidth: '100vw',
+    maxWidth: '1440px',
     // overflowX: 'hidden',
     padding: '36px 36px 82px',
     transform: 'translateY(-120px)',

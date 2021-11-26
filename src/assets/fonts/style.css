@@ -38,6 +38,14 @@
 }
 
 @font-face {
+  font-family: 'Monument Extended Medium';
+  src: local('Monument Extended Regular'), local('Monument-Extended-Regular'),
+    url('MonumentExtended-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Monument Extended Bold';
   src: local('Monument Extended Bold'), local('Monument-Extended-Bold'),
     url('MonumentExtended-Ultrabold.otf') format('openType');

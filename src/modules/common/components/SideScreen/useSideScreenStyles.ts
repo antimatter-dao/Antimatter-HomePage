@@ -44,7 +44,7 @@ export const useSideScreenStyles = makeStyles<Theme>(theme => ({
     [theme.breakpoints.up('md')]: {
       width: 'unset',
       left: 100,
-      top: 94,
+      top: 20,
     },
   },
 }));

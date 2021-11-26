@@ -87,7 +87,7 @@ export const useDAOStyles = makeStyles<Theme>(theme => ({
         content: `''`,
         height: 6,
         width: 6,
-        backgroundColor: '#63B6E4',
+        backgroundColor: '#44D8BF',
         borderRadius: '50%',
         marginRight: 20,
         flexShrink: 0,

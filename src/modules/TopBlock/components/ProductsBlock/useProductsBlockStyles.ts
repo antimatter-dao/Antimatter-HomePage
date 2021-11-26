@@ -3,7 +3,7 @@ import { FONTS } from '../../../theme/mainTheme';
 
 export const useProductsBlockStyles = makeStyles<Theme>(theme => ({
   root: {
-    padding: '200px 0 0',
+    padding: '30px 0 0',
     background: 'url(/images/ellipse_green.svg) center 70% no-repeat',
     backgroundSize: '160% 100%',
     gap: '108px',
@@ -25,8 +25,11 @@ export const useProductsBlockStyles = makeStyles<Theme>(theme => ({
     margin: '39px auto',
     [theme.breakpoints.down('md')]: {
       fontSize: 23,
-      margin: '39px 0',
+      margin: '39px 0 92px',
       textAlign: 'center',
+      '& img': {
+        width: 21,
+      },
     },
   },
 }));

@@ -68,8 +68,10 @@ export const useTilesStyles = makeStyles<Theme>(theme => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     fontSize: 20,
+    whiteSpace: 'nowrap',
     [theme.breakpoints.up('lg')]: {
       fontSize: 24,
+      whiteSpace: 'pre-wrap',
     },
   },
   tileCount: {

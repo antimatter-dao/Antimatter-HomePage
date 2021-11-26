@@ -29,7 +29,7 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
       backgroundSize: '100% auto',
     },
     [theme.breakpoints.up('lg')]: {
-      paddingBottom: theme.spacing(23),
+      // paddingBottom: theme.spacing(23),
       marginLeft: 'auto',
       marginRight: 'auto',
       borderRadius: '0 0 120px 120px',
@@ -74,7 +74,10 @@ export const useFeaturesStyles = makeStyles<Theme>(theme => ({
   features: {
     fontSize: 24,
     fontWeight: 500,
-    [theme.breakpoints.up('xl')]: { margin: '0px 88px 0' },
+    [theme.breakpoints.up('lg')]: {
+      transform: 'translateY(-50px)',
+      margin: '-50px 88px 0',
+    },
     '& .features': {
       whiteSpace: 'nowrap',
       fontFamily: FONTS.medium,

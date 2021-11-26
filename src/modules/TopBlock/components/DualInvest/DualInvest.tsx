@@ -12,7 +12,7 @@ export const DualInvest = () => {
   return (
     <>
       <div className={classes.root}>
-        <Box display="grid" gridGap={isDownMd ? '65px' : '50px'}>
+        <Box display="grid" gridGap={isDownMd ? '80px' : '50px'}>
           <Box
             display={isDownMd ? 'grid' : 'flex'}
             gridGap={isDownMd ? '32px' : '40px'}
@@ -30,7 +30,7 @@ export const DualInvest = () => {
           </Box>
           <Box
             display={isDownMd ? 'grid' : 'flex'}
-            gridGap={isDownMd ? '65px' : '40px'}
+            gridGap={isDownMd ? '80px' : '40px'}
           >
             <WithAnimation style={{ width: isDownMd ? '100%' : '50%' }}>
               <Box width={'100%'} className={classes.outlinedCard}>
