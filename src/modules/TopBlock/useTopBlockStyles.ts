@@ -40,7 +40,9 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       width: '68%',
       height: 'auto',
       minWidth: 'unset',
-      transform: 'translate(13%, -55%) scale(110%)',
+      '-webkit-transform': 'translate(13%, -55%)',
+      '-ms-transform': 'translate(13%, -55%)',
+      transform: 'translate(13%, -55%);',
       left: 'unset',
       right: 0,
     },
@@ -162,11 +164,15 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
   supportedChainBefore: {
     transformOrigin: '0 0',
     opacity: 0,
-    transform: 'scale(1, 0) rotateZ(3deg)',
+    transform: 'scale(1, 0) rotateZ(3deg);',
+    '-webkit-transform': 'scale(1, 0) rotateZ(3deg);',
+    '-ms-transform': 'scale(1, 0) rotateZ(3deg);',
   },
   supportedChainAfter: {
     transformOrigin: '0 0',
     opacity: 1,
-    transform: 'scale(1, 1) rotateZ(0)',
+    transform: 'scale(1, 1) rotateZ(0);',
+    '-webkit-transform': 'scale(1, 1) rotateZ(0);',
+    '-ms-transform': 'scale(1, 1) rotateZ(0);',
   },
 }));
