@@ -81,7 +81,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       fontFamily: FONTS.titleBold,
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: 50,
+      fontSize: 44,
       lineHeight: '66px',
       marginTop: 128,
       maxWidth: 692,
