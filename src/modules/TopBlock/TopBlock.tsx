@@ -36,7 +36,7 @@ export const TopBlock = () => {
           className={classNames(classes.video)}
           ref={loop}
         >
-          <source src="/video/Black_Ball_Loop.mp4" type="video/mp4" />
+          <source src='/video/Black_Ball_Loop.mp4' type='video/mp4' />
         </video>
         <video
           muted
@@ -45,14 +45,14 @@ export const TopBlock = () => {
           onEnded={onEnded}
           className={classNames(classes.video)}
         >
-          <source src="/video/Black_Ball_Intro.mp4" type="video/mp4" />
+          <source src='/video/Black_Ball_Intro.mp4' type='video/mp4' />
         </video>
         <div />
         <Container maxWidth={false} className={classes.container}>
           <WithAnimation
             className={classes.title}
             Component={Typography}
-            variant="h2"
+            variant='h2'
           >
             Enhanced <span>Yield</span> with <span>Structured </span> Products
           </WithAnimation>
@@ -61,7 +61,12 @@ export const TopBlock = () => {
             backed by options
           </WithAnimation>
           <WithAnimation className={classes.text} Component={'div'}>
-            <Button className={classes.launchButton}>Coming Soon</Button>
+            <Button
+              variant='contained'
+              href='https://invest.antimatter.finance'
+              role='link'
+              rel='noopener noreferrer'
+              target='_blank' className={classes.launchButton}>Launch App</Button>
           </WithAnimation>
         </Container>
         <WithAnimation
@@ -73,7 +78,7 @@ export const TopBlock = () => {
           defaultAnimation={false}
           addClassInView={classes.supportedChainAfter}
         >
-          <Box alignContent="center" className={classes.supportedChainsGrid}>
+          <Box alignContent='center' className={classes.supportedChainsGrid}>
             {chainList.map(src => (
               <div key={src}>
                 <img src={`/images/supportedChains/${src}`} />

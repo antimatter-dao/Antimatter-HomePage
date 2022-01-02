@@ -120,8 +120,8 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     margin: '0 auto',
     height: 'auto',
     width: 220,
-    opacity: 0,
-    cursor: 'default',
+    opacity: 1,
+    cursor: 'pointer',
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #000000;',
     [theme.breakpoints.up('lg')]: {
