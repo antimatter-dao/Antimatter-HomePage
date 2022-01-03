@@ -29,6 +29,10 @@ export const ProductMenu = ({ linkClass }: ProductMenuProps) => {
   const menuItems = useMemo(
     () => [
       {
+        label: <>Structured Product</>,
+        href: 'https://invest.antimatter.finance'
+      },
+      {
         label: <>BULL & BEAR</>,
         href: 'https://app.antimatter.finance/#/option_trading',
       },
