@@ -122,11 +122,14 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     width: 220,
     opacity: 1,
     cursor: 'pointer',
+    fontSize: 16,
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 56.58%, rgba(255, 255, 255, 0.5) 123.86%), #000000;',
     [theme.breakpoints.up('lg')]: {
+      fontSize: 20,
       margin: 0,
-      width: 200,
+      width: 224,
+      height: 60,
       padding: '17px 45px',
     },
   },
