@@ -62,6 +62,7 @@ export const TopBlock = () => {
           </WithAnimation>
           <WithAnimation className={classes.text} Component={'div'}>
             <Button
+              style={{fontSize: 20, fontStyle: 'normal', fontWeight: 'normal', color: '#FFFFFF', width: 224, height: 60}}
               variant='contained'
               href='https://invest.antimatter.finance'
               role='link'

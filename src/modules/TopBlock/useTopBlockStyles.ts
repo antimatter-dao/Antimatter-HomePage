@@ -101,7 +101,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       },
     },
     [theme.breakpoints.up('lg')]: {
-      maxWidth: 568,
+      maxWidth: 520,
       marginTop: 50,
       paddingLeft: 50,
     },
