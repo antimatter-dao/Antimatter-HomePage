@@ -88,6 +88,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     },
   },
   text: {
+    fontSize: 20,
     transitionDelay: '0.4s',
     marginTop: 50,
     width: '100%',
@@ -130,7 +131,7 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
       margin: 0,
       width: 224,
       height: 60,
-      padding: '17px 45px',
+      padding: '17px 57.5px',
     },
   },
   supportedChains: {
