@@ -57,8 +57,8 @@ export const TopBlock = () => {
             Enhanced <span>Yield</span> with <span>Structured </span> Products
           </WithAnimation>
           <WithAnimation className={classes.text} Component={Typography}>
-            Antimatter offers yield generating structured products backed by
-            options
+            Antimatter offers yield generating structured products{'\n'}backed
+            by options
           </WithAnimation>
           <WithAnimation className={classes.text} Component={'div'}>
             <Button

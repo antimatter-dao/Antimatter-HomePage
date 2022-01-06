@@ -92,7 +92,9 @@ export const useTopBlockStyles = makeStyles<Theme>(theme => ({
     transitionDelay: '0.4s',
     marginTop: 50,
     width: '100%',
-    [theme.breakpoints.down('sm')]: { marginTop: 20 },
+    fontFamily: 'Helvetica Roman',
+    whiteSpace: 'pre',
+    [theme.breakpoints.down('sm')]: { marginTop: 20, whiteSpace: 'unset' },
     '&:nth-child(3)': {
       transitionDelay: '0.6s',
       [theme.breakpoints.down('sm')]: {

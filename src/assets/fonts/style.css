@@ -52,3 +52,11 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Helvetica Roman';
+  src: local('Helvetica Neue Roman'), local('Helvetica-Neue-Roman'),
+    url('HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
