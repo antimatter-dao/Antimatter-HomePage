@@ -16,7 +16,7 @@ export const StrategicPartner = () => {
     'elrond.svg',
     'impossible-finance.svg',
     'fantom.svg',
-    'binance-smart-chain.svg',
+    'bnbchain.png',
     'spooky-swap.svg',
     'chain-swap.svg',
     'bounce.svg',

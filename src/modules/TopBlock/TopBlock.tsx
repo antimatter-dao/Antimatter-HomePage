@@ -9,11 +9,11 @@ import { DualInvest } from './components/DualInvest';
 import { ProductsBlock } from './components/ProductsBlock';
 
 const chainList = [
+  'bnb-chain-h.png',
   'etherum.png',
   'arbitrum.png',
   'avalanche.png',
   'fantom.png',
-  'binanceSmartChain.png',
 ];
 
 export const TopBlock = () => {
